@@ -1,9 +1,11 @@
 import React from 'react'
 
+import { Link } from 'react-router'
+
 import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
 
 const CustomNavbar = React.createClass({
-  render : () => {
+  render() {
     return (
       <div>
         <Navbar inverse>
@@ -15,10 +17,10 @@ const CustomNavbar = React.createClass({
           </Navbar.Header>
           <Navbar.Collapse>
             <Nav>
-              <NavItem eventKey={1} href="/">Home</NavItem>
-              <NavItem eventKey={2} href="/project">Project</NavItem>
-              <NavItem eventKey={2} href="/blog">Blog</NavItem>
-              <NavItem eventKey={2} href="/portfolio">Portfolio</NavItem>
+              <li role="presentation"><Link to="/">Home</Link></li>
+              <li role="presentation"><Link to="/project">Project</Link></li>
+              <li role="presentation"><Link to="/blog">Blog</Link></li>
+              <li role="presentation"><Link to="/portfolio">Portfolio</Link></li>
             </Nav>
             <Nav pullRight>
               <NavItem eventKey={1} href="mailto:contact@flyers-web.org">Contact</NavItem>

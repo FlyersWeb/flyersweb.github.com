@@ -2,7 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 
 const NoMatch = React.createClass({
-  render : () => {
+  render() {
     return (
       <div>
         <Helmet
