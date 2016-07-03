@@ -3,4 +3,5 @@ module.exports = {
   NoMatch: require('./nomatch/nomatch.jsx'),
   Navbar: require('./navbar/customnavbar.jsx'),
   Jumbotron: require('./jumbotron/customjumbotron.jsx'),
+  Footer: require('./footer/footer.jsx'),
 };

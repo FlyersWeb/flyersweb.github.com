@@ -3,7 +3,7 @@ import React from 'react'
 import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
 
 const CustomNavbar = React.createClass({
-  render : () => {
+  render() {
     return (
       <div>
         <Navbar inverse>

@@ -3,7 +3,7 @@ import React from 'react'
 import { Jumbotron } from 'react-bootstrap';
 
 const CustomJumbotron = React.createClass({
-  render : () => {
+  render() {
     return (
       <div>
         <Jumbotron>

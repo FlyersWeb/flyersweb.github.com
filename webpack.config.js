@@ -8,12 +8,16 @@ module.exports = {
   module: {
     loaders: [
       {
-        test: /\.js|\.jsx$/,
+        test: /\.jsx$/,
         exclude: /(node_modules|bower_components)/,
         loader: 'babel', // 'babel-loader' is also a legal name to reference
         query: {
-          presets: ['es2015', 'react']
+          presets: ['react', 'es2015']
         }
+      },
+      {
+        test: /\.(png|jpg|gif)$/,
+        loader: "file-loader?name=img/img-[hash:6].[ext]"
       }
     ]
   },
