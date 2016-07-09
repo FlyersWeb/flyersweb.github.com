@@ -2,10 +2,10 @@ import React from 'react'
 
 import { Row, Col } from 'react-bootstrap';
 
-import Jumbotron from '../../component/jumbotron/customjumbotron.jsx'
-import Footer from '../../component/footer/footer.jsx'
+import Jumbotron from '../jumbotron/customjumbotron.jsx'
+import Footer from '../footer/footer.jsx'
 
-import Thumb from '../../component/thumb/thumb.jsx'
+import Thumb from '../thumb/thumb.jsx'
 
 
 const thumbs = [{

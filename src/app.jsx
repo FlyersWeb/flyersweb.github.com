@@ -1,9 +1,13 @@
 import React from 'react'
 import { render } from 'react-dom'
+import { Provider } from 'react-redux'
+import { createStore } from 'redux'
 import Helmet from 'react-helmet'
 import { Router, Route, IndexRoute, browserHistory } from 'react-router'
 
-import { Home, Project, Blog, Portfolio, NoMatch, Navbar } from './component'
+import { Home, Project, Blog, Portfolio, NoMatch, Navbar } from './component/presentational'
+
+import reduxApp from './reducers'
 
 const App = React.createClass({
   render() {
@@ -23,14 +27,17 @@ const App = React.createClass({
   }
 });
 
+let store = createStore(reduxApp)
 render((
-  <Router history={browserHistory}>
-    <Route path="/" component={App}>
-      <IndexRoute component={Home} />
-      <Route path="project" component={Project}/>
-      <Route path="blog" component={Blog}/>
-      <Route path="portfolio" component={Portfolio}/>
-    </Route>
-    <Route path="*" component={NoMatch}/>
-  </Router>
-), document.body);
+  <Provider store={store}>
+    <Router history={browserHistory}>
+      <Route path="/" component={App}>
+        <IndexRoute component={Home} />
+        <Route path="project" component={Project}/>
+        <Route path="blog" component={Blog}/>
+        <Route path="portfolio" component={Portfolio}/>
+      </Route>
+      <Route path="*" component={NoMatch}/>
+    </Router>
+  </Provider>
+), document.getElementById('root'));

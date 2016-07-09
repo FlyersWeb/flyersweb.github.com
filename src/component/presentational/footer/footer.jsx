@@ -2,7 +2,7 @@ import React from 'react'
 
 import { Row, Col } from 'react-bootstrap';
 
-import Icon from './icon/icon.jsx'
+import Icon from '../icon/icon.jsx'
 
 const icons = {
   github : {
@@ -10,7 +10,7 @@ const icons = {
       href : "https://www.github.com/FlyersWeb",
     },
     properties : {
-      src : require("../../assets/social/github.jpg"),
+      src : require("../../../assets/social/github.jpg"),
       width : 128,
       height : 128
     }
@@ -19,7 +19,7 @@ const icons = {
       href : "https://twitter.com/FlyersWeb",
     },
     properties : {
-      src : require("../../assets/social/twitter.png"),
+      src : require("../../../assets/social/twitter.png"),
       width : 128,
       height : 128
     }
@@ -28,7 +28,7 @@ const icons = {
       href : "https://www.flickr.com/photos/canardodu/",
     },
     properties : {
-      src : require("../../assets/social/flickr.png"),
+      src : require("../../../assets/social/flickr.png"),
       width : 105,
       height : 105
     }
@@ -37,7 +37,7 @@ const icons = {
       href : "https://www.linkedin.com/pub/nassim-ben-ghmiss/79/339/2a3",
     },
     properties : {
-      src : require("../../assets/social/linkedin.png"),
+      src : require("../../../assets/social/linkedin.png"),
       width : 110,
       height : 110
     }

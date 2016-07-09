@@ -3,10 +3,10 @@ import Helmet from 'react-helmet'
 
 import { Row, Col } from 'react-bootstrap';
 
-import Jumbotron from '../../component/jumbotron/customjumbotron.jsx'
-import Footer from '../../component/footer/footer.jsx'
+import Jumbotron from '../jumbotron/customjumbotron.jsx'
+import Footer from '../footer/footer.jsx'
 
-import Thumb from '../../component/thumb/thumb.jsx'
+import Thumb from '../thumb/thumb.jsx'
 
 
 const thumbs = [{
@@ -52,7 +52,7 @@ const thumbs = [{
 }
 ]
 
-const Blog = React.createClass({
+const Portfolio = React.createClass({
   renderAllThumbs() {
     return thumbs.map((thumb, index) => {
       return (
@@ -82,4 +82,4 @@ const Blog = React.createClass({
   }
 });
 
-module.exports = Blog;
+module.exports = Portfolio;

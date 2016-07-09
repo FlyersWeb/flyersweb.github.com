@@ -8,4 +8,5 @@ module.exports = {
   Navbar: require('./navbar/customnavbar.jsx'),
   Jumbotron: require('./jumbotron/customjumbotron.jsx'),
   Footer: require('./footer/footer.jsx'),
+  Icon: require('./icon/icon.jsx'),
 };
