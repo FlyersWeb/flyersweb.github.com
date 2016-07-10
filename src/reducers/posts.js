@@ -1,17 +1,20 @@
-const posts = (state = [], action) => {
+import { REQUEST_POSTS , RECEIVED_POSTS, fetchPOSTS } from '../actions/posts'
+
+const posts = (state = {
+    fetcher: fetchPOSTS,
+    isFetching: false,
+    items: []
+  }, action) => {
   switch(action.type) {
-    case 'GET_POSTS':
-      return [{
-        id: "p1",
-        title: "post1",
-        text: "Test post1 content",
-        href: "https://www.github.com/FlyersWeb"
-      },{
-        id: "p2",
-        title: "post2",
-        text: "Test post2 content",
-        href: "https://www.github.com/FlyersWeb"
-      }];
+    case REQUEST_POSTS:
+      return Object.assign({}, state, {
+        isFetching: true
+      })
+    case RECEIVED_POSTS:
+      return Object.assign({}, state, {
+        isFetching: false,
+        items: action.posts
+      })
     default:
       return state;
   }

@@ -1,17 +1,20 @@
-const projects = (state = [], action) => {
+import { REQUEST_PROJECTS , RECEIVED_PROJECTS, fetchPROJECTS } from '../actions/projects'
+
+const projects = (state = {
+    fetcher: fetchPROJECTS,
+    isFetching: false,
+    items: []
+  }, action) => {
   switch(action.type) {
-    case 'GET_PROJECTS':
-      return [{
-        id: "p1",
-        title: "Project1",
-        text: "Test project1 content",
-        href: "https://www.github.com/FlyersWeb"
-      },{
-        id: "p2",
-        title: "Project2",
-        text: "Test project2 content",
-        href: "https://www.github.com/FlyersWeb"
-      }];
+    case REQUEST_PROJECTS:
+      return Object.assign({}, state, {
+        isFetching: true
+      })
+    case RECEIVED_PROJECTS:
+      return Object.assign({}, state, {
+        isFetching: false,
+        items: action.projects
+      })
     default:
       return state;
   }
