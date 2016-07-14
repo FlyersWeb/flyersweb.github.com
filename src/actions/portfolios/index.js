@@ -35,9 +35,9 @@ function receivedPORTFOLIOS(json) {
 function fetchPORTFOLIOS() {
   return dispatch => {
     dispatch(requestPORTFOLIOS())
-    var method = config.flickr.method;
-    var apiKey = config.flickr.apiKey;
-    var userId = config.flickr.userId;
+    const method = config.flickr.method;
+    const apiKey = config.flickr.apiKey;
+    const userId = config.flickr.userId;
 
     const params = { method: method, api_key: apiKey, user_id: userId, safe_search: 3, extras: 'description,tags,url_n,url_o', format: 'json'};
     const query = queryString.stringify(params);
