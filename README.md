@@ -20,6 +20,16 @@ npm run start
 
 You're done.
 
+## Using Docker
+
+```
+docker build -t flyersweb .
+```
+
+```
+docker run -it --rm --name my-app flyersweb
+```
+
 ## Demo
 
 You can check a demo on [https://www.flyers-web.org]
