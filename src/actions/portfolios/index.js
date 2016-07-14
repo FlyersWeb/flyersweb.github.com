@@ -1,3 +1,8 @@
+require('es6-promise').polyfill();
+const fetchJsonp = require('fetch-jsonp');
+const queryString = require('query-string');
+const config = require('../../../config');
+
 export const REQUEST_PORTFOLIOS = 'REQUEST_PORTFOLIOS'
 export const RECEIVED_PORTFOLIOS = 'RECEIVED_PORTFOLIOS'
 
@@ -8,60 +13,59 @@ function requestPORTFOLIOS() {
   }
 }
 
-function receivedPORTFOLIOS() {
+function receivedPORTFOLIOS(json) {
   return {
     type: RECEIVED_PORTFOLIOS,
-    portfolios : [{
-      id: 1,
-      title : "sample #1",
-      content : `<a href="https://github.com/FlyersWeb/angular-symfony" class="ng-binding">https://github.com/FlyersWeb/angular-symfony</a>
-      <p class="ng-binding">
-        Project Bootstrap for an angularJS + Symfony project
-      </p>`
-      ,
-      anchor : {
-        href : "https://github.com/FlyersWeb/angular-symfony.git"
-      },
-    }, {
-      id: 2,
-      title : "sample #2",
-      content : `<a href="https://github.com/FlyersWeb/angular-symfony" class="ng-binding">https://github.com/FlyersWeb/angular-symfony</a>
-      <p class="ng-binding">
-        Project Bootstrap for an angularJS + Symfony project
-      </p>`
-      ,
-      anchor : {
-        href : "https://github.com/FlyersWeb/angular-symfony.git"
-      },
-    }, {
-      id: 3,
-      title : "sample #3",
-      content : `<a href="https://github.com/FlyersWeb/angular-symfony" class="ng-binding">https://github.com/FlyersWeb/angular-symfony</a>
-      <p class="ng-binding">
-        Project Bootstrap for an angularJS + Symfony project
-      </p>`
-      ,
-      anchor : {
-        href : "https://github.com/FlyersWeb/angular-symfony.git"
-      },
-    }, {
-      id: 4,
-      title : "angular-symfony",
-      content : `<a href="https://github.com/FlyersWeb/angular-symfony" class="ng-binding">https://github.com/FlyersWeb/angular-symfony</a>
-      <p class="ng-binding">
-        Project Bootstrap for an angularJS + Symfony project
-      </p>`
-      ,
-      anchor : {
-        href : "https://github.com/FlyersWeb/angular-symfony.git"
-      },
-    }]
+    portfolios: json.photos.photo.map(e => {
+      return {
+        id: e.id.toString(),
+        title: e.title,
+        content: `<h4>${e.description._content}</h4>
+        <p><a href="${e.url_o}"><img src="${e.url_n}" width="${e.width_n}" height="${e.height_n}"/></a></p>`,
+        anchor: {
+          href: e.url_o
+        }
+      }
+    }),
+    receivedAt: Date.now()
   }
 }
 
-export function fetchPORTFOLIOS() {
+
+function fetchPORTFOLIOS() {
   return dispatch => {
     dispatch(requestPORTFOLIOS())
-    return dispatch(receivedPORTFOLIOS())
+    var method = config.flickr.method;
+    var apiKey = config.flickr.apiKey;
+    var userId = config.flickr.userId;
+
+    const params = { method: method, api_key: apiKey, user_id: userId, safe_search: 3, extras: 'description,tags,url_n,url_o', format: 'json'};
+    const query = queryString.stringify(params);
+    return fetchJsonp(`https://api.flickr.com/services/rest/?${query}`, {
+        jsonpCallback: 'jsoncallback',
+        timeout: 3000
+      })
+      .then(response => response.json())
+      .then(json => dispatch(receivedPORTFOLIOS(json)))
+  }
+}
+
+
+function shouldFetchPORTFOLIOS(state) {
+  const portfolios = state.portfolios;
+  if(!portfolios.items.length) {
+    return true
+  } else if (portfolios.isFetching) {
+    return false
+  } else {
+    return portfolios.didInvalidate
+  }
+}
+
+export function fetchIfNeededPORTFOLIOS() {
+  return (dispatch, getState) => {
+    if (shouldFetchPORTFOLIOS(getState())) {
+      return dispatch(fetchPORTFOLIOS())
+    }
   }
 }

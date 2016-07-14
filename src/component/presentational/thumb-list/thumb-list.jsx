@@ -30,7 +30,7 @@ ThumbList.propTypes = {
   fetcher: PropTypes.func.isRequired,
   isFetching: PropTypes.bool.isRequired,
   items: PropTypes.arrayOf(PropTypes.shape({
-    id: PropTypes.number.isRequired,
+    id: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     content: PropTypes.string.isRequired,
     anchor: PropTypes.shape({

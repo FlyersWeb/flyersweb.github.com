@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Row, Col } from 'react-bootstrap'
+import { Row, Col, Button } from 'react-bootstrap'
 
 const Thumb = React.createClass({
   propTypes: {
@@ -11,13 +11,18 @@ const Thumb = React.createClass({
     }),
   },
   render() {
+    function createMarkup(value) {
+      return {__html: value}
+    }
     return (
       <Col sm={6} md={4}>
         <h2>{this.props.title}</h2>
-        <p class="test-justify">
-          {this.props.content}
+        <div dangerouslySetInnerHTML={createMarkup(this.props.content)} />
+        <p>
+          <a class="btn" {...this.props.anchor}>
+          <Button bsStyle="info">View more &raquo;</Button>
+          </a>
         </p>
-        <p><a class="btn" {...this.props.anchor}>View details &raquo;</a></p>
       </Col>
     );
   }

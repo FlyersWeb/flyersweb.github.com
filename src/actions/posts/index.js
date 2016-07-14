@@ -1,6 +1,10 @@
+require('es6-promise').polyfill();
+const fetch = require('isomorphic-fetch');
+const queryString = require('query-string');
+const config = require('../../../config');
+
 export const REQUEST_POSTS = 'REQUEST_POSTS'
 export const RECEIVED_POSTS = 'RECEIVED_POSTS'
-
 
 function requestPOSTS() {
   return {
@@ -8,60 +12,52 @@ function requestPOSTS() {
   }
 }
 
-function receivedPOSTS() {
+function receivedPOSTS(json) {
+  console.log(json)
   return {
     type: RECEIVED_POSTS,
-    posts : [{
-      id: 1,
-      title : "post #1",
-      content : `<a href="https://github.com/FlyersWeb/angular-symfony" class="ng-binding">https://github.com/FlyersWeb/angular-symfony</a>
-      <p class="ng-binding">
-        Project Bootstrap for an angularJS + Symfony project
-      </p>`
-      ,
-      anchor : {
-        href : "https://github.com/FlyersWeb/angular-symfony.git"
-      },
-    }, {
-      id: 2,
-      title : "post #2",
-      content : `<a href="https://github.com/FlyersWeb/angular-symfony" class="ng-binding">https://github.com/FlyersWeb/angular-symfony</a>
-      <p class="ng-binding">
-        Project Bootstrap for an angularJS + Symfony project
-      </p>`
-      ,
-      anchor : {
-        href : "https://github.com/FlyersWeb/angular-symfony.git"
-      },
-    }, {
-      id: 3,
-      title : "post #3",
-      content : `<a href="https://github.com/FlyersWeb/angular-symfony" class="ng-binding">https://github.com/FlyersWeb/angular-symfony</a>
-      <p class="ng-binding">
-        Project Bootstrap for an angularJS + Symfony project
-      </p>`
-      ,
-      anchor : {
-        href : "https://github.com/FlyersWeb/angular-symfony.git"
-      },
-    }, {
-      id: 4,
-      title : "post #4",
-      content : `<a href="https://github.com/FlyersWeb/angular-symfony" class="ng-binding">https://github.com/FlyersWeb/angular-symfony</a>
-      <p class="ng-binding">
-        Project Bootstrap for an angularJS + Symfony project
-      </p>`
-      ,
-      anchor : {
-        href : "https://github.com/FlyersWeb/angular-symfony.git"
-      },
-    }]
+    posts: json.items.map(e => {
+      return {
+        id: e.id.toString(),
+        title: e.title,
+        content : (e.content.length <= 200) ? e.content : e.content.substring(0,200)+"...",
+        anchor : {
+          href : e.url
+        }
+      }
+    })
   }
 }
 
-export function fetchPOSTS() {
+function fetchPOSTS(state) {
   return dispatch => {
     dispatch(requestPOSTS())
-    return dispatch(receivedPOSTS())
+    const apiKey = config.blogger.apiKey
+
+    const params = { key: apiKey, maxResults: 15, pageToken: state.pageToken };
+    const query = queryString.stringify(params);
+
+    return fetch(`https://www.googleapis.com/blogger/v3/blogs/6604313324859652520/posts?${query}`)
+      .then(response => response.json())
+      .then(json => dispatch(receivedPOSTS(json)))
+  }
+}
+
+function shouldFetchPOSTS(state) {
+  const posts = state.posts;
+  if(!posts.items.length) {
+    return true
+  } else if (posts.isFetching) {
+    return false
+  } else {
+    return posts.didInvalidate
+  }
+}
+
+export function fetchIfNeededPOSTS() {
+  return (dispatch, getState) => {
+    if (shouldFetchPOSTS(getState())) {
+      return dispatch(fetchPOSTS(getState()))
+    }
   }
 }

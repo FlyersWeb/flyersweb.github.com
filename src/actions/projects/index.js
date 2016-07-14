@@ -1,3 +1,6 @@
+require('es6-promise').polyfill();
+const fetchJsonp = require('fetch-jsonp');
+
 export const REQUEST_PROJECTS = 'REQUEST_PROJECTS'
 export const RECEIVED_PROJECTS = 'RECEIVED_PROJECTS'
 
@@ -8,60 +11,47 @@ function requestPROJECTS() {
   }
 }
 
-function receivedPROJECTS() {
+function receivedPROJECTS(json) {
   return {
     type: RECEIVED_PROJECTS,
-    projects : [{
-      id: 1,
-      title : "angular-symfony",
-      content : `<a href="https://github.com/FlyersWeb/angular-symfony" class="ng-binding">https://github.com/FlyersWeb/angular-symfony</a>
-      <p class="ng-binding">
-        Project Bootstrap for an angularJS + Symfony project
-      </p>`
-      ,
-      anchor : {
-        href : "https://github.com/FlyersWeb/angular-symfony.git"
-      },
-    }, {
-      id: 2,
-      title : "angular-symfony",
-      content : `<a href="https://github.com/FlyersWeb/angular-symfony" class="ng-binding">https://github.com/FlyersWeb/angular-symfony</a>
-      <p class="ng-binding">
-        Project Bootstrap for an angularJS + Symfony project
-      </p>`
-      ,
-      anchor : {
-        href : "https://github.com/FlyersWeb/angular-symfony.git"
-      },
-    }, {
-      id: 3,
-      title : "angular-symfony",
-      content : `<a href="https://github.com/FlyersWeb/angular-symfony" class="ng-binding">https://github.com/FlyersWeb/angular-symfony</a>
-      <p class="ng-binding">
-        Project Bootstrap for an angularJS + Symfony project
-      </p>`
-      ,
-      anchor : {
-        href : "https://github.com/FlyersWeb/angular-symfony.git"
-      },
-    }, {
-      id: 4,
-      title : "angular-symfony",
-      content : `<a href="https://github.com/FlyersWeb/angular-symfony" class="ng-binding">https://github.com/FlyersWeb/angular-symfony</a>
-      <p class="ng-binding">
-        Project Bootstrap for an angularJS + Symfony project
-      </p>`
-      ,
-      anchor : {
-        href : "https://github.com/FlyersWeb/angular-symfony.git"
-      },
-    }]
+    projects: json.data.map(e => {
+      return {
+        id: e.id.toString(),
+        title: e.name,
+        content: `<h4>${e.description}</h4>`,
+        anchor: {
+          href: e.url
+        }
+      }
+    }),
+    receivedAt: Date.now()
   }
 }
 
-export function fetchPROJECTS() {
+function fetchPROJECTS() {
   return dispatch => {
     dispatch(requestPROJECTS())
-    return dispatch(receivedPROJECTS())
+    return fetchJsonp("https://api.github.com/users/flyersweb/repos")
+      .then(response => response.json())
+      .then(json => dispatch(receivedPROJECTS(json)))
+  }
+}
+
+function shouldFetchPROJECTS(state) {
+  const projects = state.projects;
+  if(!projects.items.length) {
+    return true
+  } else if (projects.isFetching) {
+    return false
+  } else {
+    return projects.didInvalidate
+  }
+}
+
+export function fetchIfNeededPROJECTS() {
+  return (dispatch, getState) => {
+    if (shouldFetchPROJECTS(getState())) {
+      return dispatch(fetchPROJECTS())
+    }
   }
 }
