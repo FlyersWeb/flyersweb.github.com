@@ -62,7 +62,7 @@ const Footer = React.createClass({
 
   render() {
     return (
-      <div>
+      <div className="text-center">
         <Row>
           { this.renderAllIcons() }
         </Row>

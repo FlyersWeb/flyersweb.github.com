@@ -11,6 +11,8 @@ import { Home, Project, Blog, Portfolio, NoMatch, Navbar } from './component/pre
 
 import reduxApp from './reducers'
 
+require("./assets/css/main.css")
+
 const App = React.createClass({
   render() {
     return (
