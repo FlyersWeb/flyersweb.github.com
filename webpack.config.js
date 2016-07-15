@@ -3,6 +3,7 @@ module.exports = {
   entry: './src/app.jsx',
   output: {
     path: './bin',
+    publicPath: '/assets/',
     filename: 'app.bundle.js'
   },
   module: {

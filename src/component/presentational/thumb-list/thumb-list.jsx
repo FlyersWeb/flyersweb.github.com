@@ -15,12 +15,19 @@ class ThumbList extends Component {
     const { isFetching, items } = this.props
     return (
       <Row>
-        {items.map(thumb =>
-          <Thumb
-            key={thumb.id}
-            {...thumb}
-          />
-        )}
+        {items.map((thumb, idx) => {
+          if (!(idx%3)) {
+            return (<div><Row></Row><Thumb
+              key={thumb.id}
+              {...thumb}
+            /></div>)
+          } else {
+            return (<div><Thumb
+              key={thumb.id}
+              {...thumb}
+            /></div>)
+          }
+        })}
       </Row>
     )
   }
