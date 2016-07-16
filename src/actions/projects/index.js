@@ -20,7 +20,7 @@ function receivedPROJECTS(json) {
         title: e.name,
         content: `<h4>${e.description}</h4>`,
         anchor: {
-          href: e.url
+          href: e.html_url
         }
       }
     }),
