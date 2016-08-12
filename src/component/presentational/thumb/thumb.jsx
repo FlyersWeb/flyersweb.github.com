@@ -19,7 +19,7 @@ const Thumb = React.createClass({
         <h3>{this.props.title}</h3>
         <div dangerouslySetInnerHTML={createMarkup(this.props.content)} />
         <p>
-          <a class="btn" {...this.props.anchor}>
+          <a className="btn" {...this.props.anchor}>
           <Button bsStyle="info">View more &raquo;</Button>
           </a>
         </p>
