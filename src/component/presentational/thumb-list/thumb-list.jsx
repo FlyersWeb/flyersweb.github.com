@@ -17,15 +17,15 @@ class ThumbList extends Component {
       <Row>
         {items.map((thumb, idx) => {
           if (!(idx%3)) {
-            return (<div><Row></Row><Thumb
+            return (<div key={idx}><Row></Row><Thumb
               key={thumb.id}
               {...thumb}
             /></div>)
           } else {
-            return (<div><Thumb
+            return (<Thumb
               key={thumb.id}
               {...thumb}
-            /></div>)
+            />)
           }
         })}
       </Row>
