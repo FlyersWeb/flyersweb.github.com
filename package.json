@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node --harmony index.js",
+    "build": "webpack",
     "watch-server": "nodemon --harmony index.js",
     "watch-client": "webpack -w",
     "test": "echo \"Error: no test specified\" && exit 1"
