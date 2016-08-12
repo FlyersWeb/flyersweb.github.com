@@ -13,7 +13,6 @@ function requestPOSTS() {
 }
 
 function receivedPOSTS(json) {
-  console.log(json)
   return {
     type: RECEIVED_POSTS,
     posts: json.items.map(e => {
