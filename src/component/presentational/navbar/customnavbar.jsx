@@ -11,7 +11,7 @@ const CustomNavbar = React.createClass({
         <Navbar inverse>
           <Navbar.Header>
             <Navbar.Brand>
-              <a href="/">Flyers Web</a>
+              <Link to="/">Flyers Web</Link>
             </Navbar.Brand>
             <Navbar.Toggle />
           </Navbar.Header>
