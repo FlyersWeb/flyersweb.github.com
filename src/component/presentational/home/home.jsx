@@ -12,7 +12,10 @@ const Home = React.createClass({
     return (
       <div>
         <div className="container">
-          <Jumbotron />
+          <Jumbotron
+            title="Flyers web expert"
+            content="Welcome to my Website. I'm a web developer and software designer. I love to explore new techs. I also love computer security and devices hacking. I'll present my researchs, projects and portfolio on this website."
+          />
           <FilterThumb />
           <Footer />
         </div>

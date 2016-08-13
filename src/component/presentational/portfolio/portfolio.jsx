@@ -13,7 +13,10 @@ const Portfolio = React.createClass({
     return (
       <div>
         <div className="container">
-          <Jumbotron />
+          <Jumbotron
+            title="Portfolio"
+            content="My Portfolio will show some professional projects I've worked on. It also presents some of my artistic creations made as a hobby. I like photography and 2d/3d design but mostly as free time activities."
+          />
           <FilterThumb filter='SHOW_PORTFOLIO' />
         </div>
       </div>

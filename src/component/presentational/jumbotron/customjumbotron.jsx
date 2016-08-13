@@ -3,15 +3,20 @@ import React from 'react'
 import { Jumbotron } from 'react-bootstrap';
 
 const CustomJumbotron = React.createClass({
+  propTypes: {
+    title: React.PropTypes.string.isRequired,
+    content: React.PropTypes.string.isRequired
+  },
+
   render() {
-    return (
+    return (this.props.content) ? (
       <div>
         <Jumbotron>
-          <h1>Hello, world!</h1>
-          <p>Welcome to my Website. I'm a web developer and software designer. I love to explore new techs and funny stuff around. I also love computer security and devices hacking. I'll present my researchs, projects and portfolio on this website.</p>
+          <h1>{this.props.title}</h1>
+          <p>{this.props.content}</p>
         </Jumbotron>
       </div>
-    );
+    ) : null;
   }
 });
 

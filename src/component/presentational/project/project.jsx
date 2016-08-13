@@ -13,7 +13,10 @@ const Project = React.createClass({
     return (
       <div>
         <div className="container">
-          <Jumbotron />
+          <Jumbotron
+            title="Projects"
+            content="This page will show you my current GitHub projects. Feel free to participate, it would be of a great use. These are only projects I work on as free time activities."
+          />
           <FilterThumb filter='SHOW_PROJECT' />
         </div>
       </div>
