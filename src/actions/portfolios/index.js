@@ -21,7 +21,7 @@ function receivedPORTFOLIOS(json) {
         id: e.id.toString(),
         title: e.title,
         content: `<h4>${e.description._content}</h4>
-        <p><a href="${e.url_o}"><img src="${e.url_n}" width="${e.width_n}" height="${e.height_n}"/></a></p>`,
+        <p><a href="${e.url_o}" target="_blank"><img src="${e.url_n}" width="${e.width_n}" height="${e.height_n}"/></a></p>`,
         anchor: {
           href: e.url_o
         }
