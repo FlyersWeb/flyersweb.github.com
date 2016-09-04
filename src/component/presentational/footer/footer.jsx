@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Row, Col } from 'react-bootstrap';
+import { Row, Col, Clearfix } from 'react-bootstrap';
 
 import Icon from '../icon/icon.jsx'
 
@@ -49,7 +49,7 @@ const Footer = React.createClass({
     return Object.keys(icons).map((k, index) => {
       const icon = icons[k];
       return (
-        <Col key={"col-" + index} sm={6} md={3}>
+        <Col key={"col-" + index} sm={3} md={3}>
           <Icon imageUrl={icon.url}
             image={icon.properties}
             key={"icon-" + index}
@@ -63,6 +63,7 @@ const Footer = React.createClass({
   render() {
     return (
       <div className="text-center">
+        <Clearfix visibleSmBlock visibleMdBlock visibleLgBlock></Clearfix>
         <Row>
           { this.renderAllIcons() }
         </Row>
