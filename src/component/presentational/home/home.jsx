@@ -1,7 +1,5 @@
 import React from 'react'
 
-import { Row, Col } from 'react-bootstrap';
-
 import Jumbotron from '../jumbotron/customjumbotron.jsx'
 import Footer from '../footer/footer.jsx'
 
