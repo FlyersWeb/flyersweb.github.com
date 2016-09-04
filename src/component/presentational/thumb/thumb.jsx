@@ -15,7 +15,7 @@ const Thumb = React.createClass({
       return {__html: value}
     }
     return (
-      <Col sm={6} md={4}>
+      <Col sm={4} md={4}>
         <h3>{this.props.title}</h3>
         <div dangerouslySetInnerHTML={createMarkup(this.props.content)} />
         <p>
