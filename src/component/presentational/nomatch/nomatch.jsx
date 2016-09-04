@@ -1,5 +1,7 @@
-import React from 'react'
-import Helmet from 'react-helmet'
+import React from 'react';
+import Helmet from 'react-helmet';
+
+import { Link } from 'react-router';
 
 const NoMatch = React.createClass({
   render() {
@@ -9,12 +11,12 @@ const NoMatch = React.createClass({
           htmlAttributes={{"lang": "fr"}}
           title="Error 404 Not Found"
           meta={[
-            {"name": "description", "content": "This pages do not exists"},
+            {"name": "description", "content": "This page does not exists"},
           ]}
         />
         <div className="container">
           <h1>Not Found</h1>
-          <a href="/">Go back home</a>
+          <Link to="/">Go back home</Link>
         </div>
       </div>
     )
