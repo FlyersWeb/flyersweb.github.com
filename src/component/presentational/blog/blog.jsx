@@ -1,5 +1,4 @@
 import React from 'react'
-import Helmet from 'react-helmet'
 
 import Jumbotron from '../jumbotron/customjumbotron.jsx'
 import Footer from '../footer/footer.jsx'
