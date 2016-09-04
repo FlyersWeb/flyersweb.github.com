@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react'
 import { connect } from 'react-redux'
 
-import { Row } from 'react-bootstrap'
+import { Clearfix } from 'react-bootstrap'
 
 import Thumb from '../thumb/thumb.jsx'
 
@@ -14,10 +14,12 @@ class ThumbList extends Component {
   render() {
     const { isFetching, items } = this.props
     return (
-      <Row>
+      <div>
         {items.map((thumb, idx) => {
           if (!(idx%3)) {
-            return (<div key={idx}><Row></Row><Thumb
+            return (<div key={idx}>
+              <Clearfix visibleSmBlock visibleMdBlock visibleLgBlock></Clearfix>
+              <Thumb
               key={thumb.id}
               {...thumb}
             /></div>)
@@ -28,7 +30,7 @@ class ThumbList extends Component {
             />)
           }
         })}
-      </Row>
+      </div>
     )
   }
 }
