@@ -1,6 +1,6 @@
 
 module.exports = {
-  entry: './src/app.jsx',
+  entry: ['babel-polyfill', './src/app.jsx'],
   devtool: '#source-map',
   output: {
     path: './bin',
