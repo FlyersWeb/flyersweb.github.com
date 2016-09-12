@@ -7,6 +7,9 @@ import thunkMiddleware from 'redux-thunk'
 import Helmet from 'react-helmet'
 import { Router, Route, IndexRoute, browserHistory } from 'react-router'
 
+import ReactGA from 'react-ga'
+ReactGA.initialize('UA-12307097-3')
+
 import { Home, Project, Blog, Portfolio, NoMatch, Navbar } from './component/presentational'
 
 import reduxApp from './reducers'
@@ -32,18 +35,22 @@ const App = React.createClass({
   }
 });
 
+function logPageView() {
+  ReactGA.set({ page: window.location.pathname });
+  ReactGA.pageview(window.location.pathname);
+}
+
 const loggerMiddleware = createLogger();
 let store = createStore(
   reduxApp,
   undefined,
   applyMiddleware(
-    thunkMiddleware,
-    loggerMiddleware
+    thunkMiddleware
   )
 )
 render((
   <Provider store={store}>
-    <Router history={browserHistory}>
+    <Router history={browserHistory} onUpdate={logPageView}>
       <Route path="/" component={App}>
         <IndexRoute component={Home} />
         <Route path="project" component={Project}/>
