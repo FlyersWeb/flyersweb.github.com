@@ -7,12 +7,13 @@ import thunkMiddleware from 'redux-thunk'
 import Helmet from 'react-helmet'
 import { Router, Route, IndexRoute, browserHistory } from 'react-router'
 
-import ReactGA from 'react-ga'
-ReactGA.initialize('UA-12307097-3')
-
-import { Home, Project, Blog, Portfolio, NoMatch, Navbar } from './component/presentational'
-
+import { Home, Project, Blog, Portfolio, Timefolio, NoMatch, Navbar } from './component/presentational'
 import reduxApp from './reducers'
+
+import ReactGA from 'react-ga'
+if(process.env.NODE_ENV === "production") {
+  ReactGA.initialize('UA-12307097-3')
+}
 
 require("./assets/css/main.css")
 
@@ -28,7 +29,7 @@ const App = React.createClass({
             {"name": "viewport", "content": "width=device-width, user-scalable=no"}
           ]}
         />
-        <Navbar />
+        <Navbar bsStyle="inverse" />
         {this.props.children}
       </div>
     )
@@ -41,11 +42,15 @@ function logPageView() {
 }
 
 const loggerMiddleware = createLogger();
-let store = createStore(
+
+let middlewares = [thunkMiddleware];
+if(process.env.NODE_ENV !== "production") {
+  middlewares.push(loggerMiddleware);
+}
+const store = createStore(
   reduxApp,
-  undefined,
   applyMiddleware(
-    thunkMiddleware
+    ...middlewares
   )
 )
 render((
@@ -56,6 +61,7 @@ render((
         <Route path="project" component={Project}/>
         <Route path="blog" component={Blog}/>
         <Route path="portfolio" component={Portfolio}/>
+        <Route path="timefolio" component={Timefolio}/>
       </Route>
       <Route path="*" component={NoMatch}/>
     </Router>

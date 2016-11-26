@@ -17,10 +17,12 @@ const Thumb = React.createClass({
     return (
       <Col sm={4} md={4}>
         <h3>{this.props.title}</h3>
-        <div dangerouslySetInnerHTML={createMarkup(this.props.content)} />
         <p>
-          <a className="btn" {...this.props.anchor}>
-          <Button bsStyle="info">View more &raquo;</Button>
+          <div dangerouslySetInnerHTML={createMarkup(this.props.content)} />
+        </p>
+        <p>
+          <a {...this.props.anchor}>
+          <Button bsStyle="info">See more &raquo;</Button>
           </a>
         </p>
       </Col>

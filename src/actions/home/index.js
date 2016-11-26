@@ -16,12 +16,13 @@ export function fetchHOMIES() {
       },
     }, {
       id : "1",
-      title : "Security",
-      content : `I love to discover new fields and techniques. That´s why I really appreciated team based Capture the Flag 
-      competition wargames. These experiences really improved my skills in computer security.`
+      title : "Career",
+      content : `Because I do not only make PoC but also apply my knowledges on real production environment, I encourage you to
+      have a look at my past experiences so you'll have an idea of what are my skills and expertises. I've been working mainly
+      on cutting edge web technologies on high demand websites as you will see in my career timeline.`
       ,
       anchor : {
-        href : "/blog"
+        href : "/timefolio"
       },
     }, {
       id : "2",

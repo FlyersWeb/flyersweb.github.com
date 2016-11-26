@@ -17,7 +17,7 @@ const CustomNavbar = React.createClass({
           </Navbar.Header>
           <Navbar.Collapse>
             <Nav>
-              <li role="presentation"><Link to="/">Home</Link></li>
+              <li role="presentation"><Link to="/timefolio">Career</Link></li>
               <li role="presentation"><Link to="/project">Project</Link></li>
               <li role="presentation"><Link to="/blog">Blog</Link></li>
               <li role="presentation"><Link to="/portfolio">Portfolio</Link></li>

@@ -3,6 +3,7 @@ module.exports = {
   Project: require('./project/project.jsx'),
   Blog: require('./blog/blog.jsx'),
   Portfolio: require('./portfolio/portfolio.jsx'),
+  Timefolio: require('./timefolio/timefolio.jsx'),
   Thumb: require('./thumb/thumb.jsx'),
   NoMatch: require('./nomatch/nomatch.jsx'),
   Navbar: require('./navbar/customnavbar.jsx'),
