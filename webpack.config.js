@@ -1,3 +1,6 @@
+"use strict";
+
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: ['babel-polyfill', './src/app.jsx'],
