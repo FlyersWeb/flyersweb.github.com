@@ -10,6 +10,12 @@ module.exports = {
     publicPath: '/assets/',
     filename: 'app.bundle.js'
   },
+  plugins: [
+    new CopyWebpackPlugin([
+      { from: './node_modules/tingle.js/dist/tingle.min.css', to: 'tingle.min.css'},
+      { from: './node_modules/tingle.js/dist/tingle.min.js', to: 'tingle.min.js'}
+    ])
+  ],
   module: {
     loaders: [
       {

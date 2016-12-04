@@ -8,9 +8,25 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap-theme.min.css">
+    <!-- Tingle -->
+    <link rel="stylesheet" href="/assets/tingle.min.css">
   </head>
   <body>
     <div id="root"></div>
     <script src="/assets/app.bundle.js"></script>
+    <script src="/assets/tingle.min.js"></script>
+    <script>
+      var modal = new tingle.modal({
+        footer: false,
+        stickyFooter: false
+      });
+
+      function showModal(title, image) {
+        var content = '<h3>'+title+'</h3><hr><img class="img-modal" src="'+image+'">'
+        modal.setContent(content);
+        modal.open();
+        return false;
+      }
+    </script>
   </body>
 </html>

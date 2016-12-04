@@ -17,17 +17,20 @@ function receivedPORTFOLIOS(json) {
   return {
     type: RECEIVED_PORTFOLIOS,
     portfolios: json.photos.photo.map(e => {
+      const id = e.id;
+      const title = e.description._content;
       return {
-        id: e.id.toString(),
+        id: id.toString(),
         title: e.title,
-        content: `<h4>${e.description._content}</h4>
+        content: `
+        <h4>${title}</h4>
         <p>
-          <a href="${e.url_o}" target="_blank">
-          <img src="${e.url_n}" alt="${e.tags}" class="img-responsive"/>
+          <a href="#" onclick="showModal('${title}','${e.url_o}')">
+            <img src="${e.url_n}" alt="${e.tags}" class="img-responsive"/>
           </a>
         </p>`,
         anchor: {
-          href: e.url_o
+          href: `https://www.flickr.com/photos/canardodu/${id}/`
         }
       }
     }),
