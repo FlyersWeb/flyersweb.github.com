@@ -38,7 +38,7 @@ const Timefolio = React.createClass({
             customFooter={CustomFooter}
             events={[
               {
-                date: moment('2016-04-01'),
+                date: moment('2016-04-20'),
                 title: 'FullStack Developer @ClubMed',
                 text: `
 - Website improvements and new features

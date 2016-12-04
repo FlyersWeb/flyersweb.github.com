@@ -31,7 +31,7 @@ function receivedPROJECTS(json) {
 function fetchPROJECTS() {
   return dispatch => {
     dispatch(requestPROJECTS())
-    return fetchJsonp("https://api.github.com/users/flyersweb/repos")
+    return fetchJsonp("https://api.github.com/users/flyersweb/repos?type=all&sort=pushed")
       .then(response => response.json())
       .then(json => dispatch(receivedPROJECTS(json)))
   }
