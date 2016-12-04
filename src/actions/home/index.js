@@ -6,8 +6,8 @@ export function fetchHOMIES() {
     homies: [{
       id : "0",
       title : "Coding",
-      content : `I love coding and software design. Using new web programming techs to fulfill features necessity 
-        I like to explore new tools and ideas. Using NodeJS, PHP5, C# or Python for back-end developments based on 
+      content : `Using new web programming techs to fulfill features necessity
+        I like to explore new tools and ideas. Using NodeJS, PHP, C# or Python for back-end developments based on
         new database schemes as of Redis, MongoDB, Big Table or simply SQL like. I like to focus on back-end development 
         but I also do front-end using AngularJS, ReactJS or simply native Javascript.`
       ,
@@ -26,10 +26,10 @@ export function fetchHOMIES() {
       },
     }, {
       id : "2",
-      title : "Quality",
-      content : `It is hard for developers to make bulletproof software, that's why I'm really interested by automated 
-      quality insurance tools and release chain management. Thanks to new stuff around as of devops and scrum management, 
-      quality software is possible with some work.`
+      title : "UX",
+      content : `While I do appreciate trying new technologies, I think it should always serve the user, that's why I also
+      focus my developments towards improving user experience using the best usage and integration technics. By using the available
+      tools provided by HTML5 and CSS3, it is now possible to create really immersive web experiences without performance impacts.`
       ,
       anchor : {
         href : "/portfolio"

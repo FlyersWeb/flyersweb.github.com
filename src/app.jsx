@@ -23,9 +23,9 @@ const App = React.createClass({
       <div>
         <Helmet
           htmlAttributes={{"lang": "fr"}}
-          title="Flyers Web Developer Website"
+          title="Fullstack Web developer portfolio"
           meta={[
-            {"name": "description", "content": "A web developer website showing his works and thoughts on Javascript, Web, W3C and more..."},
+            {"name": "description", "content": "A web developer website sharing his works and thoughts on Javascript, PHP, C#, HTML, CSS, Web, W3C and more..."},
             {"name": "viewport", "content": "width=device-width, user-scalable=no"}
           ]}
         />
