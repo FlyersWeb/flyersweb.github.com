@@ -5,3 +5,6 @@ bin/*
 config/*
 !config/index.js
 !config/default.json
+.cache
+public/*
+!public
