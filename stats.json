@@ -1,0 +1,88 @@
+{
+  "assetsByChunkName": {
+    "path---cube-round-make-cubes-round": [
+      "path---cube-round-make-cubes-round-bc4b67d188e34a5b89e2.js",
+      "path---cube-round-make-cubes-round-bc4b67d188e34a5b89e2.js.map"
+    ],
+    "component---src-templates-project-jsx": [
+      "component---src-templates-project-jsx-2db627a84340468f9d17.js",
+      "component---src-templates-project-jsx-2db627a84340468f9d17.js.map"
+    ],
+    "component---src-pages-contact-jsx": [
+      "component---src-pages-contact-jsx-b6a38071151886000c70.js",
+      "component---src-pages-contact-jsx-b6a38071151886000c70.js.map"
+    ],
+    "path---": [
+      "path----557518bd178906f8d58a.js",
+      "path----557518bd178906f8d58a.js.map"
+    ],
+    "component---src-layouts-index-jsx": [
+      "component---src-layouts-index-jsx-8acaef30bce441200cd8.js",
+      "component---src-layouts-index-jsx-8acaef30bce441200cd8.js.map"
+    ],
+    "component---node-modules-gatsby-plugin-offline-app-shell-js": [
+      "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js",
+      "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js.map"
+    ],
+    "path---index": [
+      "path---index-5fa5616ef25381f8810e.js",
+      "path---index-5fa5616ef25381f8810e.js.map"
+    ],
+    "component---src-pages-about-jsx": [
+      "component---src-pages-about-jsx-0db19c2c9c4e28d94e61.js",
+      "component---src-pages-about-jsx-0db19c2c9c4e28d94e61.js.map"
+    ],
+    "commons": [
+      "commons-21ae682480863ffb56da.js",
+      "build-js-styles.css",
+      "commons-21ae682480863ffb56da.js.map",
+      "build-js-styles.css.map"
+    ],
+    "path---leko-arts-your-theme-creator": [
+      "path---leko-arts-your-theme-creator-25ee9ba18382970aa5ca.js",
+      "path---leko-arts-your-theme-creator-25ee9ba18382970aa5ca.js.map"
+    ],
+    "path---404-html": [
+      "path---404-html-a0e39f21c11f6a62c5ab.js",
+      "path---404-html-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---blob-sphere-make-spheres-blob": [
+      "path---blob-sphere-make-spheres-blob-24a38e5c0a5f3b23536f.js",
+      "path---blob-sphere-make-spheres-blob-24a38e5c0a5f3b23536f.js.map"
+    ],
+    "component---src-pages-404-jsx": [
+      "component---src-pages-404-jsx-4503918ea3a16cfcdb75.js",
+      "component---src-pages-404-jsx-4503918ea3a16cfcdb75.js.map"
+    ],
+    "path---contact": [
+      "path---contact-a0e39f21c11f6a62c5ab.js",
+      "path---contact-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---offline-plugin-app-shell-fallback": [
+      "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js",
+      "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-pages-index-jsx": [
+      "component---src-pages-index-jsx-71484037cea8acc8d0af.js",
+      "component---src-pages-index-jsx-71484037cea8acc8d0af.js.map"
+    ],
+    "app": [
+      "app-f1ec8545bcc9962cb1d8.js",
+      "build-js-styles.css",
+      "app-f1ec8545bcc9962cb1d8.js.map",
+      "build-js-styles.css.map"
+    ],
+    "path---smart-triangle-make-triangles-smart": [
+      "path---smart-triangle-make-triangles-smart-6bd83bf2a48679482b9c.js",
+      "path---smart-triangle-make-triangles-smart-6bd83bf2a48679482b9c.js.map"
+    ],
+    "path---404": [
+      "path---404-a0e39f21c11f6a62c5ab.js",
+      "path---404-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---about": [
+      "path---about-a0e39f21c11f6a62c5ab.js",
+      "path---about-a0e39f21c11f6a62c5ab.js.map"
+    ]
+  }
+}
