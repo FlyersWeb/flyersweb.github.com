@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import { FaInstagram, FaBehance, FaDribbble } from 'react-icons/fa';
+import { FaGithubSquare, FaBlogger, FaLinkedin, FaTwitterSquare, FaHome } from 'react-icons/fa';
 import styled, { css } from 'react-emotion';
 import config from '../../config/website';
 import theme from '../../config/theme';
@@ -86,6 +86,14 @@ const SocialMedia = styled.div`
 const Navigation = () => (
   <Wrapper>
     <Nav>
+    <Link
+        to="/"
+        activeClassName={css`
+          ${active};
+        `}
+      >
+        <FaHome />
+      </Link>
       <Link
         to="/about"
         activeClassName={css`
@@ -95,26 +103,37 @@ const Navigation = () => (
         About
       </Link>
       <Link
-        to="/contact"
+        to="/blog"
         activeClassName={css`
           ${active};
         `}
       >
-        Contact
+        Blog
+      </Link>
+      <Link
+        to="/projects"
+        activeClassName={css`
+          ${active};
+        `}
+      >
+        Projects
       </Link>
     </Nav>
     <Name>
       <Link to="/">{config.siteTitle}</Link>
     </Name>
     <SocialMedia>
-      <a href="https://www.instagram.com/lekoarts.de" target="_blank" rel="noopener noreferrer">
-        <FaInstagram />
+      <a href="https://flyers-web.blogspot.com" target="_blank" rel="noopener noreferrer">
+        <FaBlogger />
       </a>
-      <a href="https://www.behance.net/lekoarts" target="_blank" rel="noopener noreferrer">
-        <FaBehance />
+      <a href="https://www.github.com/FlyersWeb" target="_blank" rel="noopener noreferrer">
+        <FaGithubSquare />
       </a>
-      <a href="https://dribbble.com/LeKoArts" target="_blank" rel="noopener noreferrer">
-        <FaDribbble />
+      <a href="https://twitter.com/FlyersWeb" target="_blank" rel="noopener noreferrer">
+        <FaTwitterSquare />
+      </a>
+      <a href="https://www.linkedin.com/in/nassim-ben-ghmiss-2a333979" target="_blank" rel="noopener noreferrer">
+        <FaLinkedin />
       </a>
     </SocialMedia>
   </Wrapper>

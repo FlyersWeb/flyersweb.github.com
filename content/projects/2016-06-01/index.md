@@ -1,9 +1,9 @@
 ---
-client: "CubeRound"
-title: "CubeRound - Make Cubes round!"
+client: "Club Med"
+title: "Club Med All Inclusive Hotels"
 cover: "./cubeRound.jpg"
-date: "2017-10-26"
-service: "Website"
+date: "2016-06-01"
+service: "Front-end Developer"
 ---
 # Description
 

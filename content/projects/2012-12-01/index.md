@@ -1,9 +1,9 @@
 ---
-client: "SmartTriangle"
-title: "SmartTriangle - Make Triangles smart!"
-cover: "./smartTriangle.jpg"
-date: "2017-10-27"
-service: "Art Direction"
+client: "Dresden Partners"
+title: "Dresden Partners IT Services"
+cover: "./blobSphere.jpg"
+date: "2012-12-01"
+service: "Web Project Manager"
 ---
 # Description
 

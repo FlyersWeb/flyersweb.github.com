@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'react-emotion';
+import { FaGithubSquare, FaBlogger, FaLinkedin, FaTwitterSquare } from 'react-icons/fa';
 
 const Wrapper = styled.footer`
   margin: 5rem 0;
@@ -13,9 +14,21 @@ const Wrapper = styled.footer`
 
 const Footer = () => (
   <Wrapper>
-    Copyright &copy; 2018. All right reserved. Pictures by Unsplash.{' '}
-    <a href="https://github.com/LeKoArts/gatsby-starter-portfolio-emma">Emma Theme</a> {' by '}{' '}
-    <a href="https://www.lekoarts.de">LekoArts</a>.
+    <p>
+      <a href="https://www.linkedin.com/in/nassim-ben-ghmiss-2a333979" target="_blank">
+        <FaLinkedin size={128} color="black" />
+      </a>
+      <a href="https://twitter.com/FlyersWeb" target="_blank">
+        <FaTwitterSquare size={128} color="black" />
+      </a>
+      <a href="https://www.github.com/FlyersWeb" target="_blank">
+        <FaGithubSquare size={128} color="black" />
+      </a>
+      <a href="https://flyers-web.blogspot.com" target="_blank">
+        <FaBlogger size={128} color="black" />
+      </a>
+    </p>
+    Copyright &copy; 2018. All right reserved.
   </Wrapper>
 );
 
