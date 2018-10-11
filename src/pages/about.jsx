@@ -3,21 +3,143 @@ import Helmet from 'react-helmet';
 import { Header, Container, Layout } from 'components';
 import config from '../../config/website';
 
+import styled from 'react-emotion';
+import { FaSuitcase } from 'react-icons/fa';
+import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
+import 'react-vertical-timeline-component/style.min.css';
+import { Link } from '@reach/router';
+
+const VerticalTimelineElementTitle = styled.h3`
+  font-size: 1.4em;
+`;
+
+const VerticalTimelineElementSubtitle = styled.h4`
+  font-size: 0.9em;
+  text-align: left;
+`;
+
+const VerticalTimelineElementDate = styled.p`
+  font-size: 0.8em !important;
+`;
+
 const About = () => (
   <Layout>
     <Helmet title={`About | ${config.siteTitle}`} />
     <Header>About</Header>
     <Container type="text">
-      <h1>Hi!</h1>
-      <p>
-        Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind
-        texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A
-        small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
-        paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing
-        has no control about the blind texts it is an almost unorthographic life One day however a small line of blind
-        text by the name of Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox advised her not to
-        do so, because there were thousands.
-      </p>
+      <h1>The quick version</h1>
+      <p>This shows my professional experiences as a timeline</p>
+      <VerticalTimeline>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          iconStyle={{ background: '#7b8acc', color: '#fff' }}
+          icon={<FaSuitcase />}
+          position="left"
+        >
+          <VerticalTimelineElementTitle>
+            Senior Back-end Developer @GoodsID
+          </VerticalTimelineElementTitle>
+          <VerticalTimelineElementSubtitle>
+            AWS ElasticBeanstalk, S3, CloudFront, Docker, Elixir/Phoenix, PostgreSQL, Angular 6
+          </VerticalTimelineElementSubtitle>
+          <VerticalTimelineElementDate>
+            2018 - present
+          </VerticalTimelineElementDate>
+          <p>
+            <Link to="/goods-id-luxury-supply-chain">
+              More details
+            </Link>
+          </p>
+        </VerticalTimelineElement>
+
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          iconStyle={{ background: '#7b8acc', color: '#fff' }}
+          icon={<FaSuitcase />}
+          position="right"
+        >
+          <VerticalTimelineElementTitle>
+            Full Stack Developer @OuiCar
+          </VerticalTimelineElementTitle>
+          <VerticalTimelineElementSubtitle>
+            AWS SNS/SQS, RDS, ElasticCache, ElasticSearch, Docker, PHP/Symfony3, MySQL, React/Redux-saga
+          </VerticalTimelineElementSubtitle>
+          <VerticalTimelineElementDate>
+            2017 - 2018
+          </VerticalTimelineElementDate>
+          <p>
+            <Link to="/oui-car-car-rental">
+              More details
+            </Link>
+          </p>
+        </VerticalTimelineElement>
+
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          iconStyle={{ background: '#7b8acc', color: '#fff' }}
+          icon={<FaSuitcase />}
+          position="left"
+        >
+          <VerticalTimelineElementTitle>
+            Front-end Developer @ClubMed
+          </VerticalTimelineElementTitle>
+          <VerticalTimelineElementSubtitle>
+            Heroku, GraphQL, NodeJS, React/Redux
+          </VerticalTimelineElementSubtitle>
+          <VerticalTimelineElementDate>
+            2016 - 2017
+          </VerticalTimelineElementDate>
+          <p>
+            <Link to="/club-med-all-inclusive-hotels">
+              More details
+            </Link>
+          </p>
+        </VerticalTimelineElement>
+
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          iconStyle={{ background: '#7b8acc', color: '#fff' }}
+          icon={<FaSuitcase />}
+          position="right"
+        >
+          <VerticalTimelineElementTitle>
+            Lead Back-end Developer @S4M
+          </VerticalTimelineElementTitle>
+          <VerticalTimelineElementSubtitle>
+            Varnish, Nginx, MariaDB, PHP/Symfony2, AngularJS, Javascript
+          </VerticalTimelineElementSubtitle>
+          <VerticalTimelineElementDate>
+            2014 - 2016
+          </VerticalTimelineElementDate>
+          <p>
+            <Link to="/s-4-m-mobile-advertising">
+              More details
+            </Link>
+          </p>
+        </VerticalTimelineElement>
+
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          iconStyle={{ background: '#7b8acc', color: '#fff' }}
+          icon={<FaSuitcase />}
+          position="left"
+        >
+          <VerticalTimelineElementTitle>
+            Web Project Manager @DresdenPartners
+          </VerticalTimelineElementTitle>
+          <VerticalTimelineElementSubtitle>
+            AWS, Nodejitsu, Mysql, MongoDB, NodeJS, C# ASP.NET MVC, PHP/Symfony2 BackboneJS, HighchartJS, Telerik
+          </VerticalTimelineElementSubtitle>
+          <VerticalTimelineElementDate>
+            2012 - 2014
+          </VerticalTimelineElementDate>
+          <p>
+            <Link to="/dresden-partners-it-services">
+              More details
+            </Link>
+          </p>
+        </VerticalTimelineElement>
+      </VerticalTimeline>
     </Container>
   </Layout>
 );
