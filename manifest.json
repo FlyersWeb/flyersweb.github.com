@@ -1,1 +1,4 @@
-{"name":"Nassim Portfolio","short_name":"Nassim Web Developer Portfolio","description":"Nassim Benghmiss Web Developer Portfolio and Blog - Web enthusiast, Web developer, Web designer, UI/UX","start_url":"/","background_color":"#2b2e3c","theme_color":"#3498DB","display":"minimal-ui"}
+{
+  "main.js": "render-page.js",
+  "main.js.map": "render-page.js.map"
+}
