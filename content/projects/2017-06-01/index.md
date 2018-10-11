@@ -5,6 +5,16 @@ cover: "./blobSphere.jpg"
 date: "2017-06-01"
 service: "Full Stack Developer"
 ---
-# Description
+# Resume
 
-Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox advised her not to do so, because there were thousands.
+OuiCar is a company that allows customers to rent their own car. They so can register their car in the system and, on the other side, customers can search and book the car they want.
+
+I've been working first with the front end team of 5 on implementing the new API on a React / Redux-saga plugged to a GraphQL isomorphic stack.
+
+Then I mainly worked with the back end team of 5 on the Elasticsearch based search engine providing an API done in NodeJS with Koa. The engine integrated basic catalog search criteria and a complex geocoding combined with reviews relevance scoring. 
+
+I've also worked on the Symfony 3 car catalog engine backed by a MySQL database hosted on AWS RDS.
+
+All our processes were following the scrum agile methodology.
+
+Stack : AWS SNS/SQS, RDS, ElasticCache, ElasticSearch, Docker, PHP/Symfony3, MySQL, React/Redux-saga.

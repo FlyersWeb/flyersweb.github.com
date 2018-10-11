@@ -5,6 +5,12 @@ cover: "./smartTriangle.jpg"
 date: "2018-05-01"
 service: "Senior Back-end Developer"
 ---
-# Description
+# Resume
 
-Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox advised her not to do so, because there were thousands.
+GoodsID is a company that want to bring the blockchain to the luxury and art industry. Helping customers to trace each good supply chain it provides a way to limit counterfeiting and improve good value.
+
+I've been working with a team of 5 with an AWS ElasticBeanstalk hosting, an Elixir/Phoenix back-end API for multiple Angular 6 clients.
+
+I've extensively used AES and RSA cryptography for data anonymization and integrity. The API that I made provided an account management system based on JWT tokens, a media management through AWS S3 and a NodeJS interface to interact with IOTA Blockchain.
+
+Stack : AWS ElasticBeanstalk, S3, CloudFront, Docker, Elixir/Phoenix, PostgreSQL, Angular 6.

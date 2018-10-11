@@ -5,6 +5,12 @@ cover: "./smartTriangle.jpg"
 date: "2014-06-01"
 service: "Lead Back-end Developer"
 ---
-# Description
+# Resume
 
-Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox advised her not to do so, because there were thousands.
+S4M is a digital advertising company focused on mobile devices. We managed internally three projects, one to manage advertising campaigns, one for mobile application reputation on stores and another for KPI analytics.
+
+In the back end 5 team members, I implemented new features to the PHP/Symfony2 back end connected to a MariaDB. For example, I've made a generic interface for analytics communication with third parties like Google AdWords or Facebook. I've also worked on the MRC accreditation compliance with data anonymization work and fraud detection. For this we used a Redis database to do time series spam detection.
+
+I also worked on the front end migration to AngularJS and on new widgets creation.
+
+Stack : Varnish, Nginx, MariaDB, PHP/Symfony2, AngularJS, Javascript.

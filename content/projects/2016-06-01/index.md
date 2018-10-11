@@ -5,6 +5,12 @@ cover: "./cubeRound.jpg"
 date: "2016-06-01"
 service: "Front-end Developer"
 ---
-# Description
+# Resume
 
-Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox advised her not to do so, because there were thousands.
+Club Méditerranée is an all inclusive hotel accomodation company. I've worked there as part of the front end shopping 5 members team.
+
+We've migrated all international websites, from USA to China, to the new version based on React. Then I've been working on SEO improvements, customer reassurance and on a content migration system to allow every country business unit to customize their website. I've worked on the search engine by making the GraphQL API interface and integrating it to the project. I'm proud to have added Redux to the project to ease component communication while working on this.
+
+On the infrastructure side, I've worked on Heroku review applications deployment for feature validation by the business units.
+
+Stack : Heroku, GraphQL, NodeJS, React/Redux.

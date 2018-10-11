@@ -2,22 +2,29 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import { Header, Container, Layout } from 'components';
 import config from '../../config/website';
+import styled from 'react-emotion';
+
+const Wrapper = styled.p`
+  text-align: justify;
+`;
 
 const Projects = () => (
   <Layout>
     <Helmet title={`Projects | ${config.siteTitle}`} />
     <Header>Projects</Header>
     <Container type="text">
-      <h1>Hi!</h1>
-      <p>
-        Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind
-        texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A
-        small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
-        paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing
-        has no control about the blind texts it is an almost unorthographic life One day however a small line of blind
-        text by the name of Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox advised her not to
-        do so, because there were thousands.
+      <Wrapper>
+        <h1>See my opensource Projects</h1>
+        <p>
+          I've been sharing my public projects on Github where
+          you'll find some of my most advanced projects like
+          a <strong>torrent network crawler</strong>, a bootstrap <strong>Symfony2 +
+          AngularJS</strong> project or a <strong>Pong game</strong> in Javascript.
       </p>
+      <p>
+        Feel free to have a look at my <strong><a href="https://www.github.com/FlyersWeb" target="_blank" rel="noopener noreferrer">Github</a></strong>.
+      </p>
+      </Wrapper>
     </Container>
   </Layout>
 );

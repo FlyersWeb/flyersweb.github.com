@@ -44,6 +44,10 @@ const Bottom = styled.div`
   font-size: 125%;
 `;
 
+const WrapperContainer = styled.div`
+  text-align: justify;
+`;
+
 const Project = ({ pageContext: { slug }, data: { markdownRemark: postNode } }) => {
   const project = postNode.frontmatter;
   return (
@@ -54,21 +58,23 @@ const Project = ({ pageContext: { slug }, data: { markdownRemark: postNode } }) 
         <h1>{project.title}</h1>
         <InformationWrapper>
           <InfoBlock>
-            <Top>Client</Top>
+            <Top>Company</Top>
             <Bottom>{project.client}</Bottom>
           </InfoBlock>
           <InfoBlock>
-            <Top>Date</Top>
+            <Top>Beginning date</Top>
             <Bottom>{project.date}</Bottom>
           </InfoBlock>
           <InfoBlock>
-            <Top>Service</Top>
+            <Top>Position</Top>
             <Bottom>{project.service}</Bottom>
           </InfoBlock>
         </InformationWrapper>
       </Wrapper>
       <Container type="text">
-        <div dangerouslySetInnerHTML={{ __html: postNode.html }} />
+        <WrapperContainer>
+          <div dangerouslySetInnerHTML={{ __html: postNode.html }} />
+        </WrapperContainer>
       </Container>
     </Layout>
   );
