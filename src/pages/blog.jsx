@@ -4,7 +4,7 @@ import { Header, Container, Layout } from 'components';
 import config from '../../config/website';
 import styled from 'react-emotion';
 
-const Wrapper = styled.p`
+const Wrapper = styled.div`
   text-align: justify;
 `;
 

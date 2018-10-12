@@ -1,7 +1,7 @@
 ---
 client: "GoodsID"
 title: "GoodsID Luxury supply chain"
-cover: "./smartTriangle.jpg"
+cover: "./otherCubeRound.jpg"
 date: "2018-05-01"
 service: "Senior Back-end Developer"
 ---

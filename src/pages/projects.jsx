@@ -4,7 +4,7 @@ import { Header, Container, Layout } from 'components';
 import config from '../../config/website';
 import styled from 'react-emotion';
 
-const Wrapper = styled.p`
+const Wrapper = styled.div`
   text-align: justify;
 `;
 
@@ -20,10 +20,10 @@ const Projects = () => (
           you'll find some of my most advanced projects like
           a <strong>torrent network crawler</strong>, a bootstrap <strong>Symfony2 +
           AngularJS</strong> project or a <strong>Pong game</strong> in Javascript.
-      </p>
-      <p>
-        Feel free to have a look at my <strong><a href="https://www.github.com/FlyersWeb" target="_blank" rel="noopener noreferrer">Github</a></strong>.
-      </p>
+        </p>
+        <p>
+          Feel free to have a look at my <strong><a href="https://www.github.com/FlyersWeb" target="_blank" rel="noopener noreferrer">Github</a></strong>.
+        </p>
       </Wrapper>
     </Container>
   </Layout>

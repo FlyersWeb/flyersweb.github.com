@@ -98,7 +98,7 @@ export const pageQuery = graphql`
       excerpt
       frontmatter {
         title
-        date(formatString: "DD.MM.YYYY")
+        date(formatString: "YYYY")
         client
         service
         cover {

@@ -88,6 +88,7 @@ const ProjectListing = ({ projectEdges }) => (
               <Overlay style={{ backgroundColor: overlayColor }} />
               <h2>{project.node.frontmatter.client}</h2>
               <div>{project.node.frontmatter.service}</div>
+              <div>{project.node.frontmatter.date}</div>
             </Link>
           </Content>
         </Item>

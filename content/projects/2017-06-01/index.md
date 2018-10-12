@@ -1,7 +1,7 @@
 ---
 client: "OuiCar"
 title: "OuiCar Car rental"
-cover: "./blobSphere.jpg"
+cover: "./yellowBlobSphere.jpg"
 date: "2017-06-01"
 service: "Full Stack Developer"
 ---
