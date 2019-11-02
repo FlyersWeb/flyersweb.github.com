@@ -27,8 +27,8 @@ const About = () => (
     <Helmet title={`About | ${config.siteTitle}`} />
     <Header>About</Header>
     <Container type="text">
-      <h1>The quick version</h1>
-      <p>This shows my professional experiences as a timeline</p>
+      <h1>Have a look to my working experiences</h1>
+      <p>This shows my working experiences as a Software Developer and Architect. To have more details click on the link below each working experience.</p>
       <VerticalTimeline>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
@@ -37,7 +37,7 @@ const About = () => (
           position="left"
         >
           <VerticalTimelineElementTitle>
-            Senior Back-end Developer @GoodsID
+            Senior Web Developer and Architect @GoodsID
           </VerticalTimelineElementTitle>
           <VerticalTimelineElementSubtitle>
             AWS ElasticBeanstalk, S3, CloudFront, Docker, Elixir/Phoenix, PostgreSQL, Angular 6
@@ -59,7 +59,7 @@ const About = () => (
           position="right"
         >
           <VerticalTimelineElementTitle>
-            Full Stack Developer @OuiCar
+            Senior Web Developer @OuiCar
           </VerticalTimelineElementTitle>
           <VerticalTimelineElementSubtitle>
             AWS SNS/SQS, RDS, ElasticCache, ElasticSearch, Docker, PHP/Symfony3, MySQL, React/Redux-saga
@@ -81,7 +81,7 @@ const About = () => (
           position="left"
         >
           <VerticalTimelineElementTitle>
-            Front-end Developer @ClubMed
+            Web Consultant @ClubMed
           </VerticalTimelineElementTitle>
           <VerticalTimelineElementSubtitle>
             Heroku, GraphQL, NodeJS, React/Redux
@@ -103,7 +103,7 @@ const About = () => (
           position="right"
         >
           <VerticalTimelineElementTitle>
-            Lead Back-end Developer @S4M
+            Lead Web Developer @S4M
           </VerticalTimelineElementTitle>
           <VerticalTimelineElementSubtitle>
             Varnish, Nginx, MariaDB, PHP/Symfony2, AngularJS, Javascript

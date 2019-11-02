@@ -11,12 +11,10 @@ Dresden Partners is an IT Consulting company based in Mexico city and San Franci
 
 I've worked with a team of 2 designers, 3 mobile developers and 2 web developers.
 
-As project example I've worked on the Eweclid education mobile application API with a MySQL database, a NodeJS back end and a BackboneJS front end. 
+As an example I've worked on the Eweclid education mobile application API with a MySQL database, a NodeJS back end and a BackboneJS based back office system. 
 
-I've also worked on the Evamerc customer satisfaction analytics dashboard using a PHP/Symfony2 back end and some HighchartJS quircks. 
+I've also worked on the Evamerc customer satisfaction analytic dashboard using a PHP/Symfony2 back end and some HighchartJS quirks.
 
-Also some events landing pages with NodeJS MongoDB for the Sensis cultural agency. 
-
-Ultimately I've worked on an appliance to the ADOMovil project tender which resulted in us winning the market. ADO is the biggest customer transportation company of Mexico and I made all project projection and deliverable plan for the mobile application.
+Ultimately I've worked on an appliance to the ADOMovil project tender which resulted in us winning the market. ADO is the biggest customer transportation company of Mexico and I made all project projection and deliverable plan for the back end part.
 
 Stack : AWS, Nodejitsu, Mysql, MongoDB, NodeJS, C# ASP.NET MVC, PHP/Symfony2 BackboneJS, HighchartJS, Telerik

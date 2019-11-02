@@ -75,7 +75,7 @@ const Overlay = styled.div`
 
 const ProjectListing = ({ projectEdges }) => (
   <Wrapper>
-    <h1>Professional Experiences</h1>
+    <h1>Work Experiences</h1>
     {projectEdges.map(project => {
       const overlayColor = sample(overlay);
       return (

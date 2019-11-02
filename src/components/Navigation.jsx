@@ -100,24 +100,14 @@ const Navigation = () => (
           ${active};
         `}
       >
-        About
+        Work Experiences
       </Link>
-      <Link
-        to="/blog"
-        activeClassName={css`
-          ${active};
-        `}
-      >
-        Blog
-      </Link>
-      <Link
-        to="/projects"
-        activeClassName={css`
-          ${active};
-        `}
-      >
-        Projects
-      </Link>
+      <a href="https://flyers-web.blogspot.com/" target="_blank">
+        Blog & News
+      </a>
+      <a href="https://github.com/FlyersWeb" target="_blank">
+        Personal projects
+      </a>
     </Nav>
     <Name>
       <Link to="/">{config.siteTitle}</Link>
