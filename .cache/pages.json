@@ -1,0 +1,52 @@
+[
+    {
+        "componentChunkName": "component---src-pages-index-jsx",
+        "jsonName": "index",
+        "path": "/"
+    },
+    {
+        "componentChunkName": "component---src-pages-404-jsx",
+        "jsonName": "404-html-516",
+        "path": "/404.html"
+    },
+    {
+        "componentChunkName": "component---src-pages-404-jsx",
+        "jsonName": "404-22d",
+        "path": "/404/"
+    },
+    {
+        "componentChunkName": "component---src-pages-about-jsx",
+        "jsonName": "about-f34",
+        "path": "/about/"
+    },
+    {
+        "componentChunkName": "component---src-templates-project-jsx",
+        "jsonName": "club-med-all-inclusive-hotels-b64",
+        "path": "/club-med-all-inclusive-hotels"
+    },
+    {
+        "componentChunkName": "component---src-templates-project-jsx",
+        "jsonName": "dresden-partners-it-services-52c",
+        "path": "/dresden-partners-it-services"
+    },
+    {
+        "componentChunkName": "component---src-templates-project-jsx",
+        "jsonName": "goods-id-luxury-supply-chain-c7c",
+        "path": "/goods-id-luxury-supply-chain"
+    },
+    {
+        "componentChunkName": "component---node-modules-gatsby-plugin-offline-app-shell-js",
+        "jsonName": "offline-plugin-app-shell-fallback-a30",
+        "path": "/offline-plugin-app-shell-fallback/"
+    },
+    {
+        "componentChunkName": "component---src-templates-project-jsx",
+        "jsonName": "oui-car-car-rental-398",
+        "path": "/oui-car-car-rental"
+    },
+    {
+        "componentChunkName": "component---src-templates-project-jsx",
+        "jsonName": "s-4-m-mobile-advertising-9b5",
+        "path": "/s-4-m-mobile-advertising"
+    }
+]

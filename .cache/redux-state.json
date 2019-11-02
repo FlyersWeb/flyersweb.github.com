@@ -1,0 +1,3401 @@
+{
+  "nodes": {
+    "SitePage /dev-404-page/": {
+      "path": "/dev-404-page/",
+      "id": "SitePage /dev-404-page/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "f91d29e10ba680b413138cf9ed86e655",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin dev-404-page": {
+      "resolve": "/home/nassim/Projects/flyersweb.github.com/node_modules/gatsby/dist/internal-plugins/dev-404-page",
+      "id": "Plugin dev-404-page",
+      "name": "dev-404-page",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "createPagesStatefully"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/home/nassim/Projects/flyersweb.github.com/node_modules/gatsby/dist/internal-plugins/dev-404-page",
+      "packageJson": {
+        "name": "dev-404-page",
+        "description": "Internal plugin to add a 404 page in development with helpful information",
+        "version": "1.0.0",
+        "main": "index.js",
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "5b3d5f6f80d2c1789623fac17c8c29af",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin load-babel-config": {
+      "resolve": "/home/nassim/Projects/flyersweb.github.com/node_modules/gatsby/dist/internal-plugins/load-babel-config",
+      "id": "Plugin load-babel-config",
+      "name": "load-babel-config",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "onPreBootstrap"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/home/nassim/Projects/flyersweb.github.com/node_modules/gatsby/dist/internal-plugins/load-babel-config",
+      "packageJson": {
+        "name": "load-babel-config",
+        "description": "Internal plugin that handles loading Babel configs",
+        "version": "1.0.0",
+        "main": "index.js",
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "c9030e71b7737616e532c01113865d75",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin internal-data-bridge": {
+      "resolve": "/home/nassim/Projects/flyersweb.github.com/node_modules/gatsby/dist/internal-plugins/internal-data-bridge",
+      "id": "Plugin internal-data-bridge",
+      "name": "internal-data-bridge",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "sourceNodes",
+        "onCreatePage"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/home/nassim/Projects/flyersweb.github.com/node_modules/gatsby/dist/internal-plugins/internal-data-bridge",
+      "packageJson": {
+        "name": "internal-data-bridge",
+        "description": "An internal Gatsby plugin which creates data nodes from internal data",
+        "version": "1.0.0",
+        "main": "index.js",
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "11ca1ee7efc6f4843960452368a1be87",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin prod-404": {
+      "resolve": "/home/nassim/Projects/flyersweb.github.com/node_modules/gatsby/dist/internal-plugins/prod-404",
+      "id": "Plugin prod-404",
+      "name": "prod-404",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "onCreatePage"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/home/nassim/Projects/flyersweb.github.com/node_modules/gatsby/dist/internal-plugins/prod-404",
+      "packageJson": {
+        "name": "prod-404",
+        "description": "Internal plugin to detect various flavors of 404 pages and ensure there's a 404.html path created as well to ensure compatability with static hosts",
+        "version": "1.0.0",
+        "main": "index.js",
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "c82c3c0c17ac7d09c57568de031acfd2",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin query-runner": {
+      "resolve": "/home/nassim/Projects/flyersweb.github.com/node_modules/gatsby/dist/internal-plugins/query-runner",
+      "id": "Plugin query-runner",
+      "name": "query-runner",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "onCreatePage"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/home/nassim/Projects/flyersweb.github.com/node_modules/gatsby/dist/internal-plugins/query-runner",
+      "packageJson": {
+        "name": "query-runner",
+        "description": "Internal plugin for running queries",
+        "version": "1.0.0",
+        "main": "index.js",
+        "author": "",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "e3bdfd5bb3e82e0444fe94648b70ff84",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-plugin-react-helmet": {
+      "resolve": "/home/nassim/Projects/flyersweb.github.com/node_modules/gatsby-plugin-react-helmet",
+      "id": "Plugin gatsby-plugin-react-helmet",
+      "name": "gatsby-plugin-react-helmet",
+      "version": "3.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [],
+      "browserAPIs": [],
+      "ssrAPIs": [
+        "onRenderBody"
+      ],
+      "pluginFilepath": "/home/nassim/Projects/flyersweb.github.com/node_modules/gatsby-plugin-react-helmet",
+      "packageJson": {
+        "name": "gatsby-plugin-react-helmet",
+        "description": "Manage document head data with react-helmet. Provides drop-in server rendering support for Gatsby.",
+        "version": "3.0.0",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "favicon",
+          "react-helmet",
+          "seo",
+          "document",
+          "head",
+          "title",
+          "meta",
+          "link",
+          "script",
+          "base",
+          "noscript",
+          "style"
+        ],
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "matthews.kyle@gmail.com"
+        },
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "@babel/runtime",
+            "version": "^7.0.0"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "@babel/cli",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "@babel/core",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.1.4"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": ">2.0.0-alpha"
+          },
+          {
+            "name": "react-helmet",
+            "version": ">=5.1.3"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "49cbe1965b11896c6d6e46ffdef8c70a",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-plugin-emotion": {
+      "resolve": "/home/nassim/Projects/flyersweb.github.com/node_modules/gatsby-plugin-emotion",
+      "id": "Plugin gatsby-plugin-emotion",
+      "name": "gatsby-plugin-emotion",
+      "version": "2.0.5",
+      "pluginOptions": {
+        "plugins": [],
+        "autoLabel": false,
+        "labelFormat": "[filename]--[local]"
+      },
+      "nodeAPIs": [
+        "onCreateBabelConfig"
+      ],
+      "browserAPIs": [
+        "onClientEntry"
+      ],
+      "ssrAPIs": [
+        "replaceRenderer"
+      ],
+      "pluginFilepath": "/home/nassim/Projects/flyersweb.github.com/node_modules/gatsby-plugin-emotion",
+      "packageJson": {
+        "name": "gatsby-plugin-emotion",
+        "description": "Gatsby plugin to add support for Emotion",
+        "version": "2.0.5",
+        "main": "index.js",
+        "keywords": [
+          "emotion",
+          "gatsby",
+          "gatsby-plugin"
+        ],
+        "author": {
+          "name": "Tegan Churchill",
+          "email": "churchill.tegan@gmail.com"
+        },
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "@babel/runtime",
+            "version": "^7.0.0"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "@babel/cli",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "@babel/core",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.1.4"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "emotion",
+            "version": "7 || 8 || 9"
+          },
+          {
+            "name": "emotion-server",
+            "version": "7 || 8 || 9"
+          },
+          {
+            "name": "gatsby",
+            "version": ">2.0.0-alpha"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "8c1d09dccc8caca7bf941d9d867d24b3",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-source-filesystem": {
+      "resolve": "/home/nassim/Projects/flyersweb.github.com/node_modules/gatsby-source-filesystem",
+      "id": "Plugin gatsby-source-filesystem",
+      "name": "gatsby-source-filesystem",
+      "version": "2.0.3",
+      "pluginOptions": {
+        "plugins": [],
+        "name": "projects",
+        "path": "/home/nassim/Projects/flyersweb.github.com/content/projects"
+      },
+      "nodeAPIs": [
+        "sourceNodes",
+        "setFieldsOnGraphQLNodeType"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/home/nassim/Projects/flyersweb.github.com/node_modules/gatsby-source-filesystem",
+      "packageJson": {
+        "name": "gatsby-source-filesystem",
+        "description": "Gatsby plugin which parses files within a directory for further parsing by other plugins",
+        "version": "2.0.3",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin"
+        ],
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "mathews.kyle@gmail.com"
+        },
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "@babel/runtime",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "better-queue",
+            "version": "^3.8.7"
+          },
+          {
+            "name": "bluebird",
+            "version": "^3.5.0"
+          },
+          {
+            "name": "chokidar",
+            "version": "^1.7.0"
+          },
+          {
+            "name": "fs-extra",
+            "version": "^5.0.0"
+          },
+          {
+            "name": "got",
+            "version": "^7.1.0"
+          },
+          {
+            "name": "md5-file",
+            "version": "^3.1.1"
+          },
+          {
+            "name": "mime",
+            "version": "^2.2.0"
+          },
+          {
+            "name": "pretty-bytes",
+            "version": "^4.0.2"
+          },
+          {
+            "name": "slash",
+            "version": "^1.0.0"
+          },
+          {
+            "name": "valid-url",
+            "version": "^1.0.9"
+          },
+          {
+            "name": "xstate",
+            "version": "^3.1.0"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "@babel/cli",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "@babel/core",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.1.4"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": ">2.0.0-alpha"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "f994eda86b6e4534db82de7218534825",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-transformer-remark": {
+      "resolve": "/home/nassim/Projects/flyersweb.github.com/node_modules/gatsby-transformer-remark",
+      "id": "Plugin gatsby-transformer-remark",
+      "name": "gatsby-transformer-remark",
+      "version": "2.1.7",
+      "pluginOptions": {
+        "plugins": [
+          {
+            "resolve": "/home/nassim/Projects/flyersweb.github.com/node_modules/gatsby-remark-images",
+            "id": "Plugin gatsby-remark-images",
+            "name": "gatsby-remark-images",
+            "version": "2.0.4",
+            "pluginOptions": {
+              "plugins": [],
+              "maxWidth": 820,
+              "quality": 90,
+              "linkImagesToOriginal": false,
+              "wrapperStyle": "",
+              "backgroundColor": "white",
+              "showCaptions": false,
+              "pathPrefix": "",
+              "withWebp": false
+            },
+            "nodeAPIs": [],
+            "browserAPIs": [],
+            "ssrAPIs": [],
+            "pluginFilepath": "/home/nassim/Projects/flyersweb.github.com/node_modules/gatsby-remark-images"
+          },
+          {
+            "resolve": "/home/nassim/Projects/flyersweb.github.com/node_modules/gatsby-remark-external-links",
+            "id": "Plugin gatsby-remark-external-links",
+            "name": "gatsby-remark-external-links",
+            "version": "0.0.4",
+            "pluginOptions": {
+              "plugins": [],
+              "target": "_blank",
+              "rel": "nofollow noopener noreferrer"
+            },
+            "nodeAPIs": [],
+            "browserAPIs": [],
+            "ssrAPIs": [],
+            "pluginFilepath": "/home/nassim/Projects/flyersweb.github.com/node_modules/gatsby-remark-external-links"
+          },
+          {
+            "resolve": "/home/nassim/Projects/flyersweb.github.com/node_modules/gatsby-remark-responsive-iframe",
+            "id": "Plugin gatsby-remark-responsive-iframe",
+            "name": "gatsby-remark-responsive-iframe",
+            "version": "2.0.5",
+            "pluginOptions": {
+              "plugins": [],
+              "wrapperStyle": ""
+            },
+            "nodeAPIs": [],
+            "browserAPIs": [],
+            "ssrAPIs": [],
+            "pluginFilepath": "/home/nassim/Projects/flyersweb.github.com/node_modules/gatsby-remark-responsive-iframe"
+          }
+        ]
+      },
+      "nodeAPIs": [
+        "onCreateNode",
+        "setFieldsOnGraphQLNodeType"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/home/nassim/Projects/flyersweb.github.com/node_modules/gatsby-transformer-remark",
+      "packageJson": {
+        "name": "gatsby-transformer-remark",
+        "description": "Gatsby transformer plugin for Markdown using the Remark library and ecosystem",
+        "version": "2.1.7",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "markdown",
+          "remark"
+        ],
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "mathews.kyle@gmail.com"
+        },
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "@babel/runtime",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "bluebird",
+            "version": "^3.5.0"
+          },
+          {
+            "name": "gray-matter",
+            "version": "^4.0.0"
+          },
+          {
+            "name": "hast-util-raw",
+            "version": "^2.0.2"
+          },
+          {
+            "name": "hast-util-to-html",
+            "version": "^3.0.0"
+          },
+          {
+            "name": "lodash",
+            "version": "^4.17.10"
+          },
+          {
+            "name": "mdast-util-to-hast",
+            "version": "^3.0.0"
+          },
+          {
+            "name": "mdast-util-toc",
+            "version": "^2.0.1"
+          },
+          {
+            "name": "remark",
+            "version": "^9.0.0"
+          },
+          {
+            "name": "remark-parse",
+            "version": "^5.0.0"
+          },
+          {
+            "name": "remark-retext",
+            "version": "^3.1.0"
+          },
+          {
+            "name": "remark-stringify",
+            "version": "^5.0.0"
+          },
+          {
+            "name": "retext-english",
+            "version": "^3.0.0"
+          },
+          {
+            "name": "sanitize-html",
+            "version": "^1.18.2"
+          },
+          {
+            "name": "underscore.string",
+            "version": "^3.3.4"
+          },
+          {
+            "name": "unified",
+            "version": "^6.1.5"
+          },
+          {
+            "name": "unist-util-remove-position",
+            "version": "^1.1.2"
+          },
+          {
+            "name": "unist-util-select",
+            "version": "^1.5.0"
+          },
+          {
+            "name": "unist-util-visit",
+            "version": "^1.3.0"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "@babel/cli",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "@babel/core",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.1.4"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": ">2.0.0-alpha"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "49cbd559e9843e89b8b23a32974ee1d0",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-remark-images": {
+      "resolve": "/home/nassim/Projects/flyersweb.github.com/node_modules/gatsby-remark-images",
+      "id": "Plugin gatsby-remark-images",
+      "name": "gatsby-remark-images",
+      "version": "2.0.4",
+      "pluginOptions": {
+        "plugins": [],
+        "maxWidth": 820,
+        "quality": 90,
+        "linkImagesToOriginal": false,
+        "wrapperStyle": "",
+        "backgroundColor": "white",
+        "showCaptions": false,
+        "pathPrefix": "",
+        "withWebp": false
+      },
+      "nodeAPIs": [],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/home/nassim/Projects/flyersweb.github.com/node_modules/gatsby-remark-images",
+      "packageJson": {
+        "name": "gatsby-remark-images",
+        "description": "Processes images in markdown so they can be used in the production build.",
+        "version": "2.0.4",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "image",
+          "markdown",
+          "remark",
+          "responsive images"
+        ],
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "mathews.kyle@gmail.com"
+        },
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "@babel/runtime",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "cheerio",
+            "version": "^1.0.0-rc.2"
+          },
+          {
+            "name": "is-relative-url",
+            "version": "^2.0.0"
+          },
+          {
+            "name": "lodash",
+            "version": "^4.17.10"
+          },
+          {
+            "name": "slash",
+            "version": "^1.0.0"
+          },
+          {
+            "name": "unist-util-select",
+            "version": "^1.5.0"
+          },
+          {
+            "name": "unist-util-visit-parents",
+            "version": "^2.0.1"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "@babel/cli",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "@babel/core",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.1.4"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": ">2.0.0-alpha"
+          },
+          {
+            "name": "gatsby-plugin-sharp",
+            "version": "^2.0.0-beta.5"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "e8f312b80fe5201c9fc2a801b53be8b0",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-remark-external-links": {
+      "resolve": "/home/nassim/Projects/flyersweb.github.com/node_modules/gatsby-remark-external-links",
+      "id": "Plugin gatsby-remark-external-links",
+      "name": "gatsby-remark-external-links",
+      "version": "0.0.4",
+      "pluginOptions": {
+        "plugins": [],
+        "target": "_blank",
+        "rel": "nofollow noopener noreferrer"
+      },
+      "nodeAPIs": [],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/home/nassim/Projects/flyersweb.github.com/node_modules/gatsby-remark-external-links",
+      "packageJson": {
+        "name": "gatsby-remark-external-links",
+        "description": "Automatically adds the target and rel attributes to external links in markdown.",
+        "version": "0.0.4",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "remark"
+        ],
+        "author": {
+          "name": "Jimmy Longley",
+          "email": "jimmylongley@gmail.com"
+        },
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "babel-runtime",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "is-relative-url",
+            "version": "^2.0.0"
+          },
+          {
+            "name": "unist-util-find",
+            "version": "^1.0.1"
+          },
+          {
+            "name": "unist-util-visit",
+            "version": "^1.1.3"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "babel-cli",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.0.5"
+          },
+          {
+            "name": "dedent",
+            "version": "^0.7.0"
+          },
+          {
+            "name": "jest",
+            "version": "^21.2.1"
+          },
+          {
+            "name": "remark",
+            "version": "^8.0.0"
+          }
+        ],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "8da88aa95c7c8a612f899ac86b1783fb",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-remark-responsive-iframe": {
+      "resolve": "/home/nassim/Projects/flyersweb.github.com/node_modules/gatsby-remark-responsive-iframe",
+      "id": "Plugin gatsby-remark-responsive-iframe",
+      "name": "gatsby-remark-responsive-iframe",
+      "version": "2.0.5",
+      "pluginOptions": {
+        "plugins": [],
+        "wrapperStyle": ""
+      },
+      "nodeAPIs": [],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/home/nassim/Projects/flyersweb.github.com/node_modules/gatsby-remark-responsive-iframe",
+      "packageJson": {
+        "name": "gatsby-remark-responsive-iframe",
+        "description": "Make iframes in Markdown processed by Remark responsive",
+        "version": "2.0.5",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "remark"
+        ],
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "mathews.kyle@gmail.com"
+        },
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "@babel/runtime",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "bluebird",
+            "version": "^3.5.0"
+          },
+          {
+            "name": "cheerio",
+            "version": "^1.0.0-rc.2"
+          },
+          {
+            "name": "lodash",
+            "version": "^4.17.10"
+          },
+          {
+            "name": "unist-util-visit",
+            "version": "^1.3.0"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "@babel/cli",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "@babel/core",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.1.4"
+          },
+          {
+            "name": "remark",
+            "version": "^9.0.0"
+          },
+          {
+            "name": "unist-util-find",
+            "version": "^1.0.1"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": ">2.0.0-alpha"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "2875c3dedd9efa7e9b2d3884d48af58e",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-plugin-google-analytics": {
+      "resolve": "/home/nassim/Projects/flyersweb.github.com/node_modules/gatsby-plugin-google-analytics",
+      "id": "Plugin gatsby-plugin-google-analytics",
+      "name": "gatsby-plugin-google-analytics",
+      "version": "2.0.6",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [],
+      "browserAPIs": [
+        "onRouteUpdate"
+      ],
+      "ssrAPIs": [
+        "onRenderBody"
+      ],
+      "pluginFilepath": "/home/nassim/Projects/flyersweb.github.com/node_modules/gatsby-plugin-google-analytics",
+      "packageJson": {
+        "name": "gatsby-plugin-google-analytics",
+        "description": "Gatsby plugin to add google analytics onto a site",
+        "version": "2.0.6",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "google analytics"
+        ],
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "mathews.kyle@gmail.com"
+        },
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "@babel/runtime",
+            "version": "^7.0.0"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "@babel/cli",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "@babel/core",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.1.4"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": ">2.0.0-alpha"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "4e711edf00643589816afd2c20c12727",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-plugin-nprogress": {
+      "resolve": "/home/nassim/Projects/flyersweb.github.com/node_modules/gatsby-plugin-nprogress",
+      "id": "Plugin gatsby-plugin-nprogress",
+      "name": "gatsby-plugin-nprogress",
+      "version": "2.0.5",
+      "pluginOptions": {
+        "plugins": [],
+        "color": "#3498DB"
+      },
+      "nodeAPIs": [],
+      "browserAPIs": [
+        "onClientEntry",
+        "onRouteUpdateDelayed",
+        "onRouteUpdate"
+      ],
+      "ssrAPIs": [],
+      "pluginFilepath": "/home/nassim/Projects/flyersweb.github.com/node_modules/gatsby-plugin-nprogress",
+      "packageJson": {
+        "name": "gatsby-plugin-nprogress",
+        "description": "Shows page loading indicator when loading page resources is delayed",
+        "version": "2.0.5",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin"
+        ],
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "mathews.kyle@gmail.com"
+        },
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "@babel/runtime",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "nprogress",
+            "version": "^0.2.0"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "@babel/cli",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "@babel/core",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.1.4"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": ">2.0.0-alpha"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "3ef4409a07ac0b840886dbc9f8856882",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-plugin-sharp": {
+      "resolve": "/home/nassim/Projects/flyersweb.github.com/node_modules/gatsby-plugin-sharp",
+      "id": "Plugin gatsby-plugin-sharp",
+      "name": "gatsby-plugin-sharp",
+      "version": "2.0.6",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/home/nassim/Projects/flyersweb.github.com/node_modules/gatsby-plugin-sharp",
+      "packageJson": {
+        "name": "gatsby-plugin-sharp",
+        "description": "Wrapper of the Sharp image manipulation library for Gatsby plugins",
+        "version": "2.0.6",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "image",
+          "sharp"
+        ],
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "mathews.kyle@gmail.com"
+        },
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "@babel/runtime",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "async",
+            "version": "^2.1.2"
+          },
+          {
+            "name": "bluebird",
+            "version": "^3.5.0"
+          },
+          {
+            "name": "fs-exists-cached",
+            "version": "^1.0.0"
+          },
+          {
+            "name": "imagemin",
+            "version": "^6.0.0"
+          },
+          {
+            "name": "imagemin-mozjpeg",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "imagemin-pngquant",
+            "version": "^6.0.0"
+          },
+          {
+            "name": "imagemin-webp",
+            "version": "^4.1.0"
+          },
+          {
+            "name": "lodash",
+            "version": "^4.17.10"
+          },
+          {
+            "name": "mini-svg-data-uri",
+            "version": "^1.0.0"
+          },
+          {
+            "name": "potrace",
+            "version": "^2.1.1"
+          },
+          {
+            "name": "probe-image-size",
+            "version": "^4.0.0"
+          },
+          {
+            "name": "progress",
+            "version": "^1.1.8"
+          },
+          {
+            "name": "sharp",
+            "version": "^0.20.2"
+          },
+          {
+            "name": "svgo",
+            "version": "^0.7.2"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "@babel/cli",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "@babel/core",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.1.4"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": ">2.0.0-alpha"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "5f70e04167bb44f44d8395f56f3471eb",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-transformer-sharp": {
+      "resolve": "/home/nassim/Projects/flyersweb.github.com/node_modules/gatsby-transformer-sharp",
+      "id": "Plugin gatsby-transformer-sharp",
+      "name": "gatsby-transformer-sharp",
+      "version": "2.1.3",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "onCreateNode",
+        "setFieldsOnGraphQLNodeType",
+        "onPreExtractQueries"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/home/nassim/Projects/flyersweb.github.com/node_modules/gatsby-transformer-sharp",
+      "packageJson": {
+        "name": "gatsby-transformer-sharp",
+        "description": "Gatsby transformer plugin for images using Sharp",
+        "version": "2.1.3",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "image",
+          "sharp"
+        ],
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "mathews.kyle@gmail.com"
+        },
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "@babel/runtime",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "bluebird",
+            "version": "^3.5.0"
+          },
+          {
+            "name": "fs-extra",
+            "version": "^4.0.2"
+          },
+          {
+            "name": "potrace",
+            "version": "^2.1.1"
+          },
+          {
+            "name": "probe-image-size",
+            "version": "^4.0.0"
+          },
+          {
+            "name": "sharp",
+            "version": "^0.20.2"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "@babel/cli",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "@babel/core",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.1.4"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": ">2.0.0-alpha"
+          },
+          {
+            "name": "gatsby-plugin-sharp",
+            "version": "^2.0.0-beta.3"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "580675632a84b9fd075b782b4c4f7393",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-plugin-lodash": {
+      "resolve": "/home/nassim/Projects/flyersweb.github.com/node_modules/gatsby-plugin-lodash",
+      "id": "Plugin gatsby-plugin-lodash",
+      "name": "gatsby-plugin-lodash",
+      "version": "3.0.1",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "onCreateWebpackConfig",
+        "onCreateBabelConfig"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/home/nassim/Projects/flyersweb.github.com/node_modules/gatsby-plugin-lodash",
+      "packageJson": {
+        "name": "gatsby-plugin-lodash",
+        "description": "Easy modular Lodash builds. Adds the Lodash webpack & Babel plugins to your Gatsby build",
+        "version": "3.0.1",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin"
+        ],
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "mathews.kyle@gmail.com"
+        },
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "@babel/runtime",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "babel-plugin-lodash",
+            "version": "^3.2.11"
+          },
+          {
+            "name": "lodash-webpack-plugin",
+            "version": "^0.11.5"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "@babel/cli",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "@babel/core",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.1.4"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": ">2.0.0-alpha"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "43ae7700b6ca26547f498160804f847c",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-plugin-typography": {
+      "resolve": "/home/nassim/Projects/flyersweb.github.com/node_modules/gatsby-plugin-typography",
+      "id": "Plugin gatsby-plugin-typography",
+      "name": "gatsby-plugin-typography",
+      "version": "2.2.0",
+      "pluginOptions": {
+        "plugins": [],
+        "pathToConfigModule": "src/utils/typography.jsx"
+      },
+      "nodeAPIs": [
+        "onPreBootstrap"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [
+        "onRenderBody"
+      ],
+      "pluginFilepath": "/home/nassim/Projects/flyersweb.github.com/node_modules/gatsby-plugin-typography",
+      "packageJson": {
+        "name": "gatsby-plugin-typography",
+        "description": "Gatsby plugin to setup server rendering of Typography.js' CSS",
+        "version": "2.2.0",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "typography",
+          "typography.js"
+        ],
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "mathews.kyle@gmail.com"
+        },
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "@babel/runtime",
+            "version": "^7.0.0"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "@babel/cli",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "@babel/core",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.1.4"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": ">2.0.0-alpha"
+          },
+          {
+            "name": "react-typography",
+            "version": "^0.16.1 || ^1.0.0-alpha.0"
+          },
+          {
+            "name": "typography",
+            "version": "^0.16.0 || ^1.0.0-alpha.0"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "622383ed2489027b4f61ef5cb6a18333",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-plugin-catch-links": {
+      "resolve": "/home/nassim/Projects/flyersweb.github.com/node_modules/gatsby-plugin-catch-links",
+      "id": "Plugin gatsby-plugin-catch-links",
+      "name": "gatsby-plugin-catch-links",
+      "version": "2.0.4",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [],
+      "browserAPIs": [
+        "onClientEntry"
+      ],
+      "ssrAPIs": [],
+      "pluginFilepath": "/home/nassim/Projects/flyersweb.github.com/node_modules/gatsby-plugin-catch-links",
+      "packageJson": {
+        "name": "gatsby-plugin-catch-links",
+        "description": "Intercepts local links from markdown and other non-react pages and does a client-side pushState to avoid the browser having to refresh the page.",
+        "version": "2.0.4",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin"
+        ],
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "mathews.kyle@gmail.com"
+        },
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "@babel/runtime",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "escape-string-regexp",
+            "version": "^1.0.5"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "@babel/cli",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "@babel/core",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.1.4"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": ">2.0.0-beta"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "6edfe34dd2a2720a10977bafaab8e3a4",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-plugin-sitemap": {
+      "resolve": "/home/nassim/Projects/flyersweb.github.com/node_modules/gatsby-plugin-sitemap",
+      "id": "Plugin gatsby-plugin-sitemap",
+      "name": "gatsby-plugin-sitemap",
+      "version": "2.0.1",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "onPostBuild"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [
+        "onRenderBody"
+      ],
+      "pluginFilepath": "/home/nassim/Projects/flyersweb.github.com/node_modules/gatsby-plugin-sitemap",
+      "packageJson": {
+        "name": "gatsby-plugin-sitemap",
+        "description": "Gatsby plugin that automatically creates a sitemap for your site",
+        "version": "2.0.1",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin"
+        ],
+        "author": {
+          "name": "Nicholas Young &lt;nicholas@nicholaswyoung.com&gt;"
+        },
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "@babel/runtime",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "sitemap",
+            "version": "^1.12.0"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "@babel/cli",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "@babel/core",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.1.4"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": ">2.0.0-alpha"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "dcf31b222930aa8b36750601fda97216",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-plugin-manifest": {
+      "resolve": "/home/nassim/Projects/flyersweb.github.com/node_modules/gatsby-plugin-manifest",
+      "id": "Plugin gatsby-plugin-manifest",
+      "name": "gatsby-plugin-manifest",
+      "version": "2.0.5",
+      "pluginOptions": {
+        "plugins": [],
+        "name": "Nassim's Work Experiences",
+        "short_name": "Nassim Ben Ghmiss Software Developer and Architect Portfolio",
+        "description": "Nassim Ben Ghmiss Functional Software Developer portfolio and opensource projects",
+        "start_url": "/",
+        "background_color": "#2b2e3c",
+        "theme_color": "#3498DB",
+        "display": "standalone",
+        "icon": "src/favicon.png"
+      },
+      "nodeAPIs": [
+        "onPostBootstrap"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [
+        "onRenderBody"
+      ],
+      "pluginFilepath": "/home/nassim/Projects/flyersweb.github.com/node_modules/gatsby-plugin-manifest",
+      "packageJson": {
+        "name": "gatsby-plugin-manifest",
+        "description": "Gatsby plugin which adds a manifest.webmanifest to make sites progressive web apps",
+        "version": "2.0.5",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "favicon",
+          "icons",
+          "manifest.webmanifest",
+          "progressive-web-app",
+          "pwa"
+        ],
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "mathews.kyle@gmail.com"
+        },
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "@babel/runtime",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "bluebird",
+            "version": "^3.5.0"
+          },
+          {
+            "name": "sharp",
+            "version": "^0.20.2"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "@babel/cli",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "@babel/core",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.1.4"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": ">2.0.0-alpha"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "50903e8377c481bd6d5f2f82763f6f09",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-plugin-offline": {
+      "resolve": "/home/nassim/Projects/flyersweb.github.com/node_modules/gatsby-plugin-offline",
+      "id": "Plugin gatsby-plugin-offline",
+      "name": "gatsby-plugin-offline",
+      "version": "2.0.6",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "createPages",
+        "onPostBuild"
+      ],
+      "browserAPIs": [
+        "registerServiceWorker",
+        "onPostPrefetchPathname",
+        "onServiceWorkerActive"
+      ],
+      "ssrAPIs": [],
+      "pluginFilepath": "/home/nassim/Projects/flyersweb.github.com/node_modules/gatsby-plugin-offline",
+      "packageJson": {
+        "name": "gatsby-plugin-offline",
+        "description": "Gatsby plugin which sets up a site to be able to run offline",
+        "version": "2.0.6",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "offline",
+          "precache",
+          "service-worker"
+        ],
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "mathews.kyle@gmail.com"
+        },
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "@babel/runtime",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "cheerio",
+            "version": "^1.0.0-rc.2"
+          },
+          {
+            "name": "lodash",
+            "version": "^4.17.10"
+          },
+          {
+            "name": "workbox-build",
+            "version": "^3.4.1"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "@babel/cli",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "@babel/core",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.1.4"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": ">2.0.0-beta"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "b3ca205b4f518df4511352fe365b4baa",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-plugin-netlify": {
+      "resolve": "/home/nassim/Projects/flyersweb.github.com/node_modules/gatsby-plugin-netlify",
+      "id": "Plugin gatsby-plugin-netlify",
+      "name": "gatsby-plugin-netlify",
+      "version": "2.0.1",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "onCreateWebpackConfig",
+        "onPostBuild"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/home/nassim/Projects/flyersweb.github.com/node_modules/gatsby-plugin-netlify",
+      "packageJson": {
+        "name": "gatsby-plugin-netlify",
+        "description": "A Gatsby plugin which generates a _headers file for netlify",
+        "version": "2.0.1",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "http/2-server-push",
+          "netlify"
+        ],
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "mathews.kyle@gmail.com"
+        },
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "@babel/runtime",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "fs-extra",
+            "version": "^4.0.2"
+          },
+          {
+            "name": "kebab-hash",
+            "version": "^0.1.2"
+          },
+          {
+            "name": "lodash",
+            "version": "^4.17.10"
+          },
+          {
+            "name": "webpack-assets-manifest",
+            "version": "^3.0.2"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "@babel/cli",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "@babel/core",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.1.4"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": ">2.0.0-alpha"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "8d6fa0015d86724f68fac70c7e0352da",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin default-site-plugin": {
+      "resolve": "/home/nassim/Projects/flyersweb.github.com",
+      "id": "Plugin default-site-plugin",
+      "name": "default-site-plugin",
+      "version": "479df3477ef70d499bbc8395949d3d35",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "onCreateNode",
+        "createPages",
+        "onCreateWebpackConfig"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/home/nassim/Projects/flyersweb.github.com",
+      "packageJson": {
+        "name": "gatsby-starter-portfolio-emma",
+        "description": "Gatsby Starter Portfolio Emma",
+        "version": "2.0.0",
+        "main": "n/a",
+        "keywords": [
+          "gatsby",
+          "lekoarts",
+          "portfolio",
+          "starter",
+          "gatsby-starter"
+        ],
+        "author": "LekoArts <hello@lekoarts.de> (https://www.lekoarts.de)",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "emotion",
+            "version": "^9.2.9"
+          },
+          {
+            "name": "emotion-server",
+            "version": "^9.2.9"
+          },
+          {
+            "name": "emotion-theming",
+            "version": "^9.2.9"
+          },
+          {
+            "name": "gatsby",
+            "version": "^2.0.0"
+          },
+          {
+            "name": "gatsby-image",
+            "version": "^2.0.5"
+          },
+          {
+            "name": "gatsby-plugin-catch-links",
+            "version": "^2.0.2"
+          },
+          {
+            "name": "gatsby-plugin-emotion",
+            "version": "^2.0.5"
+          },
+          {
+            "name": "gatsby-plugin-google-analytics",
+            "version": "^2.0.5"
+          },
+          {
+            "name": "gatsby-plugin-lodash",
+            "version": "^3.0.1"
+          },
+          {
+            "name": "gatsby-plugin-manifest",
+            "version": "^2.0.2"
+          },
+          {
+            "name": "gatsby-plugin-netlify",
+            "version": "^2.0.0"
+          },
+          {
+            "name": "gatsby-plugin-nprogress",
+            "version": "^2.0.5"
+          },
+          {
+            "name": "gatsby-plugin-offline",
+            "version": "^2.0.5"
+          },
+          {
+            "name": "gatsby-plugin-react-helmet",
+            "version": "^3.0.0"
+          },
+          {
+            "name": "gatsby-plugin-sharp",
+            "version": "^2.0.5"
+          },
+          {
+            "name": "gatsby-plugin-sitemap",
+            "version": "^2.0.1"
+          },
+          {
+            "name": "gatsby-plugin-typography",
+            "version": "^2.2.0"
+          },
+          {
+            "name": "gatsby-remark-external-links",
+            "version": "^0.0.4"
+          },
+          {
+            "name": "gatsby-remark-images",
+            "version": "^2.0.1"
+          },
+          {
+            "name": "gatsby-remark-responsive-iframe",
+            "version": "^2.0.5"
+          },
+          {
+            "name": "gatsby-source-filesystem",
+            "version": "^2.0.1"
+          },
+          {
+            "name": "gatsby-transformer-remark",
+            "version": "^2.1.1"
+          },
+          {
+            "name": "gatsby-transformer-sharp",
+            "version": "^2.1.1"
+          },
+          {
+            "name": "lodash",
+            "version": "^4.17.11"
+          },
+          {
+            "name": "polished",
+            "version": "^2.0.3"
+          },
+          {
+            "name": "prop-types",
+            "version": "^15.6.2"
+          },
+          {
+            "name": "react",
+            "version": "^16.5.1"
+          },
+          {
+            "name": "react-dom",
+            "version": "^16.5.1"
+          },
+          {
+            "name": "react-emotion",
+            "version": "^9.2.9"
+          },
+          {
+            "name": "react-helmet",
+            "version": "^5.2.0"
+          },
+          {
+            "name": "react-icons",
+            "version": "^3.0.5"
+          },
+          {
+            "name": "react-typography",
+            "version": "^0.16.13"
+          },
+          {
+            "name": "react-vertical-timeline-component",
+            "version": "^2.3.1"
+          },
+          {
+            "name": "typography",
+            "version": "^0.16.17"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "babel-eslint",
+            "version": "^9.0.0"
+          },
+          {
+            "name": "babel-preset-env",
+            "version": "^1.7.0"
+          },
+          {
+            "name": "chalk",
+            "version": "^2.4.1"
+          },
+          {
+            "name": "eslint",
+            "version": "^5.6.0"
+          },
+          {
+            "name": "eslint-config-airbnb",
+            "version": "^17.1.0"
+          },
+          {
+            "name": "eslint-config-prettier",
+            "version": "^3.0.1"
+          },
+          {
+            "name": "eslint-plugin-import",
+            "version": "^2.14.0"
+          },
+          {
+            "name": "eslint-plugin-jsx-a11y",
+            "version": "^6.1.1"
+          },
+          {
+            "name": "eslint-plugin-prettier",
+            "version": "^2.6.2"
+          },
+          {
+            "name": "eslint-plugin-react",
+            "version": "^7.11.1"
+          },
+          {
+            "name": "prettier",
+            "version": "^1.14.2"
+          }
+        ],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "0032fb0421a6e313f140229b76184464",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-plugin-page-creator": {
+      "resolve": "/home/nassim/Projects/flyersweb.github.com/node_modules/gatsby-plugin-page-creator",
+      "id": "Plugin gatsby-plugin-page-creator",
+      "name": "gatsby-plugin-page-creator",
+      "version": "2.0.1",
+      "pluginOptions": {
+        "plugins": [],
+        "path": "/home/nassim/Projects/flyersweb.github.com/src/pages",
+        "pathCheck": false
+      },
+      "nodeAPIs": [
+        "createPagesStatefully"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/home/nassim/Projects/flyersweb.github.com/node_modules/gatsby-plugin-page-creator",
+      "packageJson": {
+        "name": "gatsby-plugin-page-creator",
+        "description": "Gatsby plugin that automatically creates pages from React components in specified directories",
+        "version": "2.0.1",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin"
+        ],
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "mathews.kyle@gmail.com"
+        },
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "@babel/runtime",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "bluebird",
+            "version": "^3.5.0"
+          },
+          {
+            "name": "chokidar",
+            "version": "^1.7.0"
+          },
+          {
+            "name": "fs-exists-cached",
+            "version": "^1.0.0"
+          },
+          {
+            "name": "glob",
+            "version": "^7.1.1"
+          },
+          {
+            "name": "lodash",
+            "version": "^4.17.10"
+          },
+          {
+            "name": "parse-filepath",
+            "version": "^1.0.1"
+          },
+          {
+            "name": "slash",
+            "version": "^1.0.0"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "@babel/cli",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "@babel/core",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.0.5"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": ">2.0.0-alpha"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "2a06f12725a31d39489fdae1e2a2ef6f",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Site": {
+      "siteMetadata": {
+        "siteUrl": "https://www.flyersweb.org"
+      },
+      "pathPrefix": "",
+      "polyfill": true,
+      "buildTime": "2019-11-02T11:36:32.609Z",
+      "id": "Site",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "f54f26047cfc3068560981a88e4e099e",
+        "type": "Site",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "85f27a2d-c01a-544e-9712-f98bf12cdbab": {
+      "id": "85f27a2d-c01a-544e-9712-f98bf12cdbab",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "1fc7e45e8daa7483f1702d6bb3d331b4",
+        "type": "Directory",
+        "description": "Directory \"content/projects\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "projects",
+      "absolutePath": "/home/nassim/Projects/flyersweb.github.com/content/projects",
+      "relativePath": "",
+      "extension": "",
+      "size": 4096,
+      "prettySize": "4.1 kB",
+      "modifiedTime": "2019-11-02T11:09:38.163Z",
+      "accessTime": "2019-11-02T11:11:11.752Z",
+      "changeTime": "2019-11-02T11:09:38.163Z",
+      "birthTime": "2019-11-02T11:09:38.163Z",
+      "root": "/",
+      "dir": "/home/nassim/Projects/flyersweb.github.com/content",
+      "base": "projects",
+      "ext": "",
+      "name": "projects",
+      "relativeDirectory": "..",
+      "dev": 2053,
+      "mode": 16893,
+      "nlink": 7,
+      "uid": 1000,
+      "gid": 1000,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 25691516,
+      "blocks": 8,
+      "atimeMs": 1572693071752.198,
+      "mtimeMs": 1572692978163.226,
+      "ctimeMs": 1572692978163.226,
+      "birthtimeMs": 1572692978163.226,
+      "atime": "2019-11-02T11:11:11.752Z",
+      "mtime": "2019-11-02T11:09:38.163Z",
+      "ctime": "2019-11-02T11:09:38.163Z",
+      "birthtime": "2019-11-02T11:09:38.163Z"
+    },
+    "68908d5f-3961-5976-816f-f34e1d9ff83b": {
+      "id": "68908d5f-3961-5976-816f-f34e1d9ff83b",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "f07949b4a8e1afc868b31ecedb359fe1",
+        "type": "Directory",
+        "description": "Directory \"content/projects/2012-12-01\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "projects",
+      "absolutePath": "/home/nassim/Projects/flyersweb.github.com/content/projects/2012-12-01",
+      "relativePath": "2012-12-01",
+      "extension": "",
+      "size": 4096,
+      "prettySize": "4.1 kB",
+      "modifiedTime": "2019-11-02T11:09:38.151Z",
+      "accessTime": "2019-11-02T11:11:11.792Z",
+      "changeTime": "2019-11-02T11:09:38.151Z",
+      "birthTime": "2019-11-02T11:09:38.151Z",
+      "root": "/",
+      "dir": "/home/nassim/Projects/flyersweb.github.com/content/projects",
+      "base": "2012-12-01",
+      "ext": "",
+      "name": "2012-12-01",
+      "relativeDirectory": "",
+      "dev": 2053,
+      "mode": 16893,
+      "nlink": 2,
+      "uid": 1000,
+      "gid": 1000,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 25691517,
+      "blocks": 8,
+      "atimeMs": 1572693071792.1982,
+      "mtimeMs": 1572692978151.226,
+      "ctimeMs": 1572692978151.226,
+      "birthtimeMs": 1572692978151.226,
+      "atime": "2019-11-02T11:11:11.792Z",
+      "mtime": "2019-11-02T11:09:38.151Z",
+      "ctime": "2019-11-02T11:09:38.151Z",
+      "birthtime": "2019-11-02T11:09:38.151Z"
+    },
+    "af091bd3-b51a-52dd-b06c-94583fb505f7": {
+      "id": "af091bd3-b51a-52dd-b06c-94583fb505f7",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "c75b04e38e1424e02b3777351b6031f2",
+        "type": "Directory",
+        "description": "Directory \"content/projects/2016-06-01\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "projects",
+      "absolutePath": "/home/nassim/Projects/flyersweb.github.com/content/projects/2016-06-01",
+      "relativePath": "2016-06-01",
+      "extension": "",
+      "size": 4096,
+      "prettySize": "4.1 kB",
+      "modifiedTime": "2019-11-02T11:09:38.163Z",
+      "accessTime": "2019-11-02T11:11:11.792Z",
+      "changeTime": "2019-11-02T11:09:38.163Z",
+      "birthTime": "2019-11-02T11:09:38.163Z",
+      "root": "/",
+      "dir": "/home/nassim/Projects/flyersweb.github.com/content/projects",
+      "base": "2016-06-01",
+      "ext": "",
+      "name": "2016-06-01",
+      "relativeDirectory": "",
+      "dev": 2053,
+      "mode": 16893,
+      "nlink": 2,
+      "uid": 1000,
+      "gid": 1000,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 25691523,
+      "blocks": 8,
+      "atimeMs": 1572693071792.1982,
+      "mtimeMs": 1572692978163.226,
+      "ctimeMs": 1572692978163.226,
+      "birthtimeMs": 1572692978163.226,
+      "atime": "2019-11-02T11:11:11.792Z",
+      "mtime": "2019-11-02T11:09:38.163Z",
+      "ctime": "2019-11-02T11:09:38.163Z",
+      "birthtime": "2019-11-02T11:09:38.163Z"
+    },
+    "25c50b50-ea87-5a00-a77a-05113cddf292": {
+      "id": "25c50b50-ea87-5a00-a77a-05113cddf292",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "7e1ccd3cd9ddb16ccba935a880b9a759",
+        "type": "Directory",
+        "description": "Directory \"content/projects/2014-06-01\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "projects",
+      "absolutePath": "/home/nassim/Projects/flyersweb.github.com/content/projects/2014-06-01",
+      "relativePath": "2014-06-01",
+      "extension": "",
+      "size": 4096,
+      "prettySize": "4.1 kB",
+      "modifiedTime": "2019-11-02T11:09:38.151Z",
+      "accessTime": "2019-11-02T11:11:11.792Z",
+      "changeTime": "2019-11-02T11:09:38.151Z",
+      "birthTime": "2019-11-02T11:09:38.151Z",
+      "root": "/",
+      "dir": "/home/nassim/Projects/flyersweb.github.com/content/projects",
+      "base": "2014-06-01",
+      "ext": "",
+      "name": "2014-06-01",
+      "relativeDirectory": "",
+      "dev": 2053,
+      "mode": 16893,
+      "nlink": 2,
+      "uid": 1000,
+      "gid": 1000,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 25691520,
+      "blocks": 8,
+      "atimeMs": 1572693071792.1982,
+      "mtimeMs": 1572692978151.226,
+      "ctimeMs": 1572692978151.226,
+      "birthtimeMs": 1572692978151.226,
+      "atime": "2019-11-02T11:11:11.792Z",
+      "mtime": "2019-11-02T11:09:38.151Z",
+      "ctime": "2019-11-02T11:09:38.151Z",
+      "birthtime": "2019-11-02T11:09:38.151Z"
+    },
+    "819d9fda-aefc-538b-883c-14ff4652ccd1": {
+      "id": "819d9fda-aefc-538b-883c-14ff4652ccd1",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "b52571b7c3ba2785cdd8aea95c7df671",
+        "type": "Directory",
+        "description": "Directory \"content/projects/2017-06-01\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "projects",
+      "absolutePath": "/home/nassim/Projects/flyersweb.github.com/content/projects/2017-06-01",
+      "relativePath": "2017-06-01",
+      "extension": "",
+      "size": 4096,
+      "prettySize": "4.1 kB",
+      "modifiedTime": "2019-11-02T11:09:38.163Z",
+      "accessTime": "2019-11-02T11:11:11.792Z",
+      "changeTime": "2019-11-02T11:09:38.163Z",
+      "birthTime": "2019-11-02T11:09:38.163Z",
+      "root": "/",
+      "dir": "/home/nassim/Projects/flyersweb.github.com/content/projects",
+      "base": "2017-06-01",
+      "ext": "",
+      "name": "2017-06-01",
+      "relativeDirectory": "",
+      "dev": 2053,
+      "mode": 16893,
+      "nlink": 2,
+      "uid": 1000,
+      "gid": 1000,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 25691526,
+      "blocks": 8,
+      "atimeMs": 1572693071792.1982,
+      "mtimeMs": 1572692978163.226,
+      "ctimeMs": 1572692978163.226,
+      "birthtimeMs": 1572692978163.226,
+      "atime": "2019-11-02T11:11:11.792Z",
+      "mtime": "2019-11-02T11:09:38.163Z",
+      "ctime": "2019-11-02T11:09:38.163Z",
+      "birthtime": "2019-11-02T11:09:38.163Z"
+    },
+    "533b7aba-1962-5a95-b89d-7866355e2598": {
+      "id": "533b7aba-1962-5a95-b89d-7866355e2598",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "6b7d9682d8b81f4804a3dd3774d087fc",
+        "type": "Directory",
+        "description": "Directory \"content/projects/2018-05-15\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "projects",
+      "absolutePath": "/home/nassim/Projects/flyersweb.github.com/content/projects/2018-05-15",
+      "relativePath": "2018-05-15",
+      "extension": "",
+      "size": 4096,
+      "prettySize": "4.1 kB",
+      "modifiedTime": "2019-11-02T11:09:38.163Z",
+      "accessTime": "2019-11-02T11:11:11.792Z",
+      "changeTime": "2019-11-02T11:09:38.163Z",
+      "birthTime": "2019-11-02T11:09:38.163Z",
+      "root": "/",
+      "dir": "/home/nassim/Projects/flyersweb.github.com/content/projects",
+      "base": "2018-05-15",
+      "ext": "",
+      "name": "2018-05-15",
+      "relativeDirectory": "",
+      "dev": 2053,
+      "mode": 16893,
+      "nlink": 2,
+      "uid": 1000,
+      "gid": 1000,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 25691529,
+      "blocks": 8,
+      "atimeMs": 1572693071792.1982,
+      "mtimeMs": 1572692978163.226,
+      "ctimeMs": 1572692978163.226,
+      "birthtimeMs": 1572692978163.226,
+      "atime": "2019-11-02T11:11:11.792Z",
+      "mtime": "2019-11-02T11:09:38.163Z",
+      "ctime": "2019-11-02T11:09:38.163Z",
+      "birthtime": "2019-11-02T11:09:38.163Z"
+    },
+    "1a128fbe-a80c-59d5-b63a-959969745bc0": {
+      "id": "1a128fbe-a80c-59d5-b63a-959969745bc0",
+      "children": [
+        "a4d02a79-5cc8-5266-96b8-db1de32e8a6b"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "a35a2cb1fb34683fe51f74398481e0af",
+        "type": "File",
+        "mediaType": "text/markdown",
+        "description": "File \"content/projects/2012-12-01/index.md\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "projects",
+      "absolutePath": "/home/nassim/Projects/flyersweb.github.com/content/projects/2012-12-01/index.md",
+      "relativePath": "2012-12-01/index.md",
+      "extension": "md",
+      "size": 1095,
+      "prettySize": "1.09 kB",
+      "modifiedTime": "2019-11-02T11:25:39.387Z",
+      "accessTime": "2019-11-02T11:25:39.419Z",
+      "changeTime": "2019-11-02T11:25:39.387Z",
+      "birthTime": "2019-11-02T11:25:39.387Z",
+      "root": "/",
+      "dir": "/home/nassim/Projects/flyersweb.github.com/content/projects/2012-12-01",
+      "base": "index.md",
+      "ext": ".md",
+      "name": "index",
+      "relativeDirectory": "2012-12-01",
+      "dev": 2053,
+      "mode": 33204,
+      "nlink": 1,
+      "uid": 1000,
+      "gid": 1000,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 25691519,
+      "blocks": 8,
+      "atimeMs": 1572693939418.5376,
+      "mtimeMs": 1572693939386.5374,
+      "ctimeMs": 1572693939386.5374,
+      "birthtimeMs": 1572693939386.5374,
+      "atime": "2019-11-02T11:25:39.419Z",
+      "mtime": "2019-11-02T11:25:39.387Z",
+      "ctime": "2019-11-02T11:25:39.387Z",
+      "birthtime": "2019-11-02T11:25:39.387Z"
+    },
+    "3f50453c-247d-586a-a00c-cf9c38bac55e": {
+      "id": "3f50453c-247d-586a-a00c-cf9c38bac55e",
+      "children": [
+        "542bdc28-0767-5f28-bb20-fbbb2b21c70e"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "24ac624e2af3c649dae2dc4337bcd98f",
+        "type": "File",
+        "mediaType": "text/markdown",
+        "description": "File \"content/projects/2016-06-01/index.md\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "projects",
+      "absolutePath": "/home/nassim/Projects/flyersweb.github.com/content/projects/2016-06-01/index.md",
+      "relativePath": "2016-06-01/index.md",
+      "extension": "md",
+      "size": 980,
+      "prettySize": "980 B",
+      "modifiedTime": "2019-11-02T11:25:39.387Z",
+      "accessTime": "2019-11-02T11:25:39.423Z",
+      "changeTime": "2019-11-02T11:25:39.387Z",
+      "birthTime": "2019-11-02T11:25:39.387Z",
+      "root": "/",
+      "dir": "/home/nassim/Projects/flyersweb.github.com/content/projects/2016-06-01",
+      "base": "index.md",
+      "ext": ".md",
+      "name": "index",
+      "relativeDirectory": "2016-06-01",
+      "dev": 2053,
+      "mode": 33204,
+      "nlink": 1,
+      "uid": 1000,
+      "gid": 1000,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 25691525,
+      "blocks": 8,
+      "atimeMs": 1572693939422.5376,
+      "mtimeMs": 1572693939386.5374,
+      "ctimeMs": 1572693939386.5374,
+      "birthtimeMs": 1572693939386.5374,
+      "atime": "2019-11-02T11:25:39.423Z",
+      "mtime": "2019-11-02T11:25:39.387Z",
+      "ctime": "2019-11-02T11:25:39.387Z",
+      "birthtime": "2019-11-02T11:25:39.387Z"
+    },
+    "8be9cb34-a38f-5f72-86c5-617e035f196b": {
+      "id": "8be9cb34-a38f-5f72-86c5-617e035f196b",
+      "children": [
+        "87566a16-b244-5553-b91f-b5029ca00006"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "d6e81f69de1ea2f0ca428d6192dcb622",
+        "type": "File",
+        "mediaType": "text/markdown",
+        "description": "File \"content/projects/2014-06-01/index.md\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "projects",
+      "absolutePath": "/home/nassim/Projects/flyersweb.github.com/content/projects/2014-06-01/index.md",
+      "relativePath": "2014-06-01/index.md",
+      "extension": "md",
+      "size": 842,
+      "prettySize": "842 B",
+      "modifiedTime": "2019-11-02T11:25:39.387Z",
+      "accessTime": "2019-11-02T11:25:39.423Z",
+      "changeTime": "2019-11-02T11:25:39.387Z",
+      "birthTime": "2019-11-02T11:25:39.387Z",
+      "root": "/",
+      "dir": "/home/nassim/Projects/flyersweb.github.com/content/projects/2014-06-01",
+      "base": "index.md",
+      "ext": ".md",
+      "name": "index",
+      "relativeDirectory": "2014-06-01",
+      "dev": 2053,
+      "mode": 33204,
+      "nlink": 1,
+      "uid": 1000,
+      "gid": 1000,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 25691521,
+      "blocks": 8,
+      "atimeMs": 1572693939422.5376,
+      "mtimeMs": 1572693939386.5374,
+      "ctimeMs": 1572693939386.5374,
+      "birthtimeMs": 1572693939386.5374,
+      "atime": "2019-11-02T11:25:39.423Z",
+      "mtime": "2019-11-02T11:25:39.387Z",
+      "ctime": "2019-11-02T11:25:39.387Z",
+      "birthtime": "2019-11-02T11:25:39.387Z"
+    },
+    "fec8ec32-f80a-552b-8a24-23d590df3ce6": {
+      "id": "fec8ec32-f80a-552b-8a24-23d590df3ce6",
+      "children": [
+        "8e9fc2ad-68b7-565f-ba94-9b8b81f85854"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "dc5eb98fae27f6569d33382c0900c71e",
+        "type": "File",
+        "mediaType": "text/markdown",
+        "description": "File \"content/projects/2017-06-01/index.md\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "projects",
+      "absolutePath": "/home/nassim/Projects/flyersweb.github.com/content/projects/2017-06-01/index.md",
+      "relativePath": "2017-06-01/index.md",
+      "extension": "md",
+      "size": 1014,
+      "prettySize": "1.01 kB",
+      "modifiedTime": "2019-11-02T11:25:39.387Z",
+      "accessTime": "2019-11-02T11:25:39.423Z",
+      "changeTime": "2019-11-02T11:25:39.387Z",
+      "birthTime": "2019-11-02T11:25:39.387Z",
+      "root": "/",
+      "dir": "/home/nassim/Projects/flyersweb.github.com/content/projects/2017-06-01",
+      "base": "index.md",
+      "ext": ".md",
+      "name": "index",
+      "relativeDirectory": "2017-06-01",
+      "dev": 2053,
+      "mode": 33204,
+      "nlink": 1,
+      "uid": 1000,
+      "gid": 1000,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 25691527,
+      "blocks": 8,
+      "atimeMs": 1572693939422.5376,
+      "mtimeMs": 1572693939386.5374,
+      "ctimeMs": 1572693939386.5374,
+      "birthtimeMs": 1572693939386.5374,
+      "atime": "2019-11-02T11:25:39.423Z",
+      "mtime": "2019-11-02T11:25:39.387Z",
+      "ctime": "2019-11-02T11:25:39.387Z",
+      "birthtime": "2019-11-02T11:25:39.387Z"
+    },
+    "8fe2a1e9-8b5f-5f38-b256-e64884905cb5": {
+      "id": "8fe2a1e9-8b5f-5f38-b256-e64884905cb5",
+      "children": [
+        "30988f4c-b066-5619-8c21-afc6e6816897"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "58421aae8c01947287f15d98834dbe41",
+        "type": "File",
+        "mediaType": "text/markdown",
+        "description": "File \"content/projects/2018-05-15/index.md\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "projects",
+      "absolutePath": "/home/nassim/Projects/flyersweb.github.com/content/projects/2018-05-15/index.md",
+      "relativePath": "2018-05-15/index.md",
+      "extension": "md",
+      "size": 985,
+      "prettySize": "985 B",
+      "modifiedTime": "2019-11-02T11:25:39.387Z",
+      "accessTime": "2019-11-02T11:25:39.423Z",
+      "changeTime": "2019-11-02T11:25:39.387Z",
+      "birthTime": "2019-11-02T11:25:39.387Z",
+      "root": "/",
+      "dir": "/home/nassim/Projects/flyersweb.github.com/content/projects/2018-05-15",
+      "base": "index.md",
+      "ext": ".md",
+      "name": "index",
+      "relativeDirectory": "2018-05-15",
+      "dev": 2053,
+      "mode": 33204,
+      "nlink": 1,
+      "uid": 1000,
+      "gid": 1000,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 25691530,
+      "blocks": 8,
+      "atimeMs": 1572693939422.5376,
+      "mtimeMs": 1572693939386.5374,
+      "ctimeMs": 1572693939386.5374,
+      "birthtimeMs": 1572693939386.5374,
+      "atime": "2019-11-02T11:25:39.423Z",
+      "mtime": "2019-11-02T11:25:39.387Z",
+      "ctime": "2019-11-02T11:25:39.387Z",
+      "birthtime": "2019-11-02T11:25:39.387Z"
+    },
+    "df6aaae8-4800-5993-b967-1cf89755916a": {
+      "id": "df6aaae8-4800-5993-b967-1cf89755916a",
+      "children": [
+        "d3fe4471-a59a-5cb7-a993-a19f6b57fe26"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "6fddcc062738759fdf558ef34a022b15",
+        "type": "File",
+        "mediaType": "image/jpeg",
+        "description": "File \"content/projects/2012-12-01/blobSphere.jpg\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "projects",
+      "absolutePath": "/home/nassim/Projects/flyersweb.github.com/content/projects/2012-12-01/blobSphere.jpg",
+      "relativePath": "2012-12-01/blobSphere.jpg",
+      "extension": "jpg",
+      "size": 209762,
+      "prettySize": "210 kB",
+      "modifiedTime": "2019-11-02T11:09:38.151Z",
+      "accessTime": "2019-11-02T11:11:12.960Z",
+      "changeTime": "2019-11-02T11:09:38.151Z",
+      "birthTime": "2019-11-02T11:09:38.151Z",
+      "root": "/",
+      "dir": "/home/nassim/Projects/flyersweb.github.com/content/projects/2012-12-01",
+      "base": "blobSphere.jpg",
+      "ext": ".jpg",
+      "name": "blobSphere",
+      "relativeDirectory": "2012-12-01",
+      "dev": 2053,
+      "mode": 33204,
+      "nlink": 1,
+      "uid": 1000,
+      "gid": 1000,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 25691518,
+      "blocks": 416,
+      "atimeMs": 1572693072960.2104,
+      "mtimeMs": 1572692978151.226,
+      "ctimeMs": 1572692978151.226,
+      "birthtimeMs": 1572692978151.226,
+      "atime": "2019-11-02T11:11:12.960Z",
+      "mtime": "2019-11-02T11:09:38.151Z",
+      "ctime": "2019-11-02T11:09:38.151Z",
+      "birthtime": "2019-11-02T11:09:38.151Z"
+    },
+    "d3fe4471-a59a-5cb7-a993-a19f6b57fe26": {
+      "id": "d3fe4471-a59a-5cb7-a993-a19f6b57fe26",
+      "children": [],
+      "parent": "df6aaae8-4800-5993-b967-1cf89755916a",
+      "internal": {
+        "contentDigest": "6fddcc062738759fdf558ef34a022b15",
+        "type": "ImageSharp",
+        "owner": "gatsby-transformer-sharp"
+      }
+    },
+    "10ade770-3fa7-5d75-b3e1-20069633b459": {
+      "id": "10ade770-3fa7-5d75-b3e1-20069633b459",
+      "children": [
+        "e2ba9738-2219-5f97-988f-61c5d2ad38b4"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "e36baa46d7dac6ad35eeff2f9cc0e77c",
+        "type": "File",
+        "mediaType": "image/jpeg",
+        "description": "File \"content/projects/2018-05-15/otherCubeRound.jpg\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "projects",
+      "absolutePath": "/home/nassim/Projects/flyersweb.github.com/content/projects/2018-05-15/otherCubeRound.jpg",
+      "relativePath": "2018-05-15/otherCubeRound.jpg",
+      "extension": "jpg",
+      "size": 204563,
+      "prettySize": "205 kB",
+      "modifiedTime": "2019-11-02T11:09:38.167Z",
+      "accessTime": "2019-11-02T11:11:13.000Z",
+      "changeTime": "2019-11-02T11:09:38.167Z",
+      "birthTime": "2019-11-02T11:09:38.167Z",
+      "root": "/",
+      "dir": "/home/nassim/Projects/flyersweb.github.com/content/projects/2018-05-15",
+      "base": "otherCubeRound.jpg",
+      "ext": ".jpg",
+      "name": "otherCubeRound",
+      "relativeDirectory": "2018-05-15",
+      "dev": 2053,
+      "mode": 33204,
+      "nlink": 1,
+      "uid": 1000,
+      "gid": 1000,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 25691531,
+      "blocks": 400,
+      "atimeMs": 1572693073000.211,
+      "mtimeMs": 1572692978167.226,
+      "ctimeMs": 1572692978167.226,
+      "birthtimeMs": 1572692978167.226,
+      "atime": "2019-11-02T11:11:13.000Z",
+      "mtime": "2019-11-02T11:09:38.167Z",
+      "ctime": "2019-11-02T11:09:38.167Z",
+      "birthtime": "2019-11-02T11:09:38.167Z"
+    },
+    "7741743c-61c6-5a71-b483-8b4d9a0d1218": {
+      "id": "7741743c-61c6-5a71-b483-8b4d9a0d1218",
+      "children": [
+        "0668a3cc-74d9-5aca-8539-cae3da217c3e"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "224143b7440585785b0d46827cc65219",
+        "type": "File",
+        "mediaType": "image/jpeg",
+        "description": "File \"content/projects/2016-06-01/cubeRound.jpg\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "projects",
+      "absolutePath": "/home/nassim/Projects/flyersweb.github.com/content/projects/2016-06-01/cubeRound.jpg",
+      "relativePath": "2016-06-01/cubeRound.jpg",
+      "extension": "jpg",
+      "size": 292267,
+      "prettySize": "292 kB",
+      "modifiedTime": "2019-11-02T11:09:38.163Z",
+      "accessTime": "2019-11-02T11:11:12.968Z",
+      "changeTime": "2019-11-02T11:09:38.163Z",
+      "birthTime": "2019-11-02T11:09:38.163Z",
+      "root": "/",
+      "dir": "/home/nassim/Projects/flyersweb.github.com/content/projects/2016-06-01",
+      "base": "cubeRound.jpg",
+      "ext": ".jpg",
+      "name": "cubeRound",
+      "relativeDirectory": "2016-06-01",
+      "dev": 2053,
+      "mode": 33204,
+      "nlink": 1,
+      "uid": 1000,
+      "gid": 1000,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 25691524,
+      "blocks": 576,
+      "atimeMs": 1572693072968.2104,
+      "mtimeMs": 1572692978163.226,
+      "ctimeMs": 1572692978163.226,
+      "birthtimeMs": 1572692978163.226,
+      "atime": "2019-11-02T11:11:12.968Z",
+      "mtime": "2019-11-02T11:09:38.163Z",
+      "ctime": "2019-11-02T11:09:38.163Z",
+      "birthtime": "2019-11-02T11:09:38.163Z"
+    },
+    "a4d02a79-5cc8-5266-96b8-db1de32e8a6b": {
+      "id": "a4d02a79-5cc8-5266-96b8-db1de32e8a6b",
+      "children": [],
+      "parent": "1a128fbe-a80c-59d5-b63a-959969745bc0",
+      "internal": {
+        "content": "# Resume\n\nDresden Partners is an IT Consulting company based in Mexico city and San Francisco. I've worked on different projects, for US and Mexican companies, first as a developer, then as a project manager.\n\nI've worked with a team of 2 designers, 3 mobile developers and 2 web developers.\n\nAs an example I've worked on the Eweclid education mobile application API with a MySQL database, a NodeJS back end and a BackboneJS based back office system. \n\nI've also worked on the Evamerc customer satisfaction analytic dashboard using a PHP/Symfony2 back end and some HighchartJS quirks.\n\nUltimately I've worked on an appliance to the ADOMovil project tender which resulted in us winning the market. ADO is the biggest customer transportation company of Mexico and I made all project projection and deliverable plan for the back end part.\n\nStack : AWS, Nodejitsu, Mysql, MongoDB, NodeJS, C# ASP.NET MVC, PHP/Symfony2 BackboneJS, HighchartJS, Telerik",
+        "type": "MarkdownRemark",
+        "contentDigest": "719c864b8b68b911afcb0cc24b44a25b",
+        "owner": "gatsby-transformer-remark",
+        "fieldOwners": {
+          "slug": "default-site-plugin"
+        }
+      },
+      "frontmatter": {
+        "title": "Dresden Partners IT Services",
+        "client": "Dresden Partners",
+        "cover": "./blobSphere.jpg",
+        "date": "2012-12-01",
+        "service": "Web Project Manager",
+        "_PARENT": "1a128fbe-a80c-59d5-b63a-959969745bc0"
+      },
+      "excerpt": "",
+      "rawMarkdownBody": "# Resume\n\nDresden Partners is an IT Consulting company based in Mexico city and San Francisco. I've worked on different projects, for US and Mexican companies, first as a developer, then as a project manager.\n\nI've worked with a team of 2 designers, 3 mobile developers and 2 web developers.\n\nAs an example I've worked on the Eweclid education mobile application API with a MySQL database, a NodeJS back end and a BackboneJS based back office system. \n\nI've also worked on the Evamerc customer satisfaction analytic dashboard using a PHP/Symfony2 back end and some HighchartJS quirks.\n\nUltimately I've worked on an appliance to the ADOMovil project tender which resulted in us winning the market. ADO is the biggest customer transportation company of Mexico and I made all project projection and deliverable plan for the back end part.\n\nStack : AWS, Nodejitsu, Mysql, MongoDB, NodeJS, C# ASP.NET MVC, PHP/Symfony2 BackboneJS, HighchartJS, Telerik",
+      "fileAbsolutePath": "/home/nassim/Projects/flyersweb.github.com/content/projects/2012-12-01/index.md",
+      "fields": {
+        "slug": "/dresden-partners-it-services"
+      }
+    },
+    "542bdc28-0767-5f28-bb20-fbbb2b21c70e": {
+      "id": "542bdc28-0767-5f28-bb20-fbbb2b21c70e",
+      "children": [],
+      "parent": "3f50453c-247d-586a-a00c-cf9c38bac55e",
+      "internal": {
+        "content": "# Resume\n\nClub Méditerranée is an all inclusive hotel accommodation company. I've worked there as part of the front end shopping 5 members team being part of the full 20 front end team.\n\nWe've migrated all international websites, from USA to China, to the new version based on React.\n\nThen I've been working on SEO improvements, customer reassurance and on the custom content migration system to allow every country business unit to customize their website.\n\nI've worked on the search engine by making the GraphQL API interface and integrating it to the project. I'm proud to have added Redux to the project to ease component communication while working on this.\n\nOn the infrastructure side, I've worked on Heroku review applications deployment for feature validation by the business units.\n\nStack : Heroku, GraphQL, NodeJS, React/Redux.",
+        "type": "MarkdownRemark",
+        "contentDigest": "ec3098da6f3303c566e049c6baf21d9a",
+        "owner": "gatsby-transformer-remark",
+        "fieldOwners": {
+          "slug": "default-site-plugin"
+        }
+      },
+      "frontmatter": {
+        "title": "Club Med All Inclusive Hotels",
+        "client": "Club Med",
+        "cover": "./cubeRound.jpg",
+        "date": "2016-06-01",
+        "service": "Front-end Developer",
+        "_PARENT": "3f50453c-247d-586a-a00c-cf9c38bac55e"
+      },
+      "excerpt": "",
+      "rawMarkdownBody": "# Resume\n\nClub Méditerranée is an all inclusive hotel accommodation company. I've worked there as part of the front end shopping 5 members team being part of the full 20 front end team.\n\nWe've migrated all international websites, from USA to China, to the new version based on React.\n\nThen I've been working on SEO improvements, customer reassurance and on the custom content migration system to allow every country business unit to customize their website.\n\nI've worked on the search engine by making the GraphQL API interface and integrating it to the project. I'm proud to have added Redux to the project to ease component communication while working on this.\n\nOn the infrastructure side, I've worked on Heroku review applications deployment for feature validation by the business units.\n\nStack : Heroku, GraphQL, NodeJS, React/Redux.",
+      "fileAbsolutePath": "/home/nassim/Projects/flyersweb.github.com/content/projects/2016-06-01/index.md",
+      "fields": {
+        "slug": "/club-med-all-inclusive-hotels"
+      }
+    },
+    "87566a16-b244-5553-b91f-b5029ca00006": {
+      "id": "87566a16-b244-5553-b91f-b5029ca00006",
+      "children": [],
+      "parent": "8be9cb34-a38f-5f72-86c5-617e035f196b",
+      "internal": {
+        "content": "# Resume\n\nS4M is a digital advertising company focused on mobile devices. We managed internally three projects, one to manage advertising campaigns, one for mobile application reputation on stores and another for KPI analytic.\n\nIn the back end 5 team members, I implemented new features to the PHP/Symfony2 back end connected to a MariaDB. For example, I've made a generic interface for analytic communication with third parties like Google Ad Words or Facebook.\n\nI've also worked on the MRC accreditation compliance with data anonymization work and fraud detection. For this we used a Redis database to do time series spam detection.\n\nStack : Varnish, Nginx, MariaDB, PHP/Symfony2, AngularJS, JavaScript.",
+        "type": "MarkdownRemark",
+        "contentDigest": "336dd0a40517cc354f438f277bef8fa1",
+        "owner": "gatsby-transformer-remark",
+        "fieldOwners": {
+          "slug": "default-site-plugin"
+        }
+      },
+      "frontmatter": {
+        "title": "S4M Mobile Advertising",
+        "client": "S4M",
+        "cover": "./smartTriangle.jpg",
+        "date": "2014-06-01",
+        "service": "Lead Back-end Developer",
+        "_PARENT": "8be9cb34-a38f-5f72-86c5-617e035f196b"
+      },
+      "excerpt": "",
+      "rawMarkdownBody": "# Resume\n\nS4M is a digital advertising company focused on mobile devices. We managed internally three projects, one to manage advertising campaigns, one for mobile application reputation on stores and another for KPI analytic.\n\nIn the back end 5 team members, I implemented new features to the PHP/Symfony2 back end connected to a MariaDB. For example, I've made a generic interface for analytic communication with third parties like Google Ad Words or Facebook.\n\nI've also worked on the MRC accreditation compliance with data anonymization work and fraud detection. For this we used a Redis database to do time series spam detection.\n\nStack : Varnish, Nginx, MariaDB, PHP/Symfony2, AngularJS, JavaScript.",
+      "fileAbsolutePath": "/home/nassim/Projects/flyersweb.github.com/content/projects/2014-06-01/index.md",
+      "fields": {
+        "slug": "/s-4-m-mobile-advertising"
+      }
+    },
+    "8e9fc2ad-68b7-565f-ba94-9b8b81f85854": {
+      "id": "8e9fc2ad-68b7-565f-ba94-9b8b81f85854",
+      "children": [],
+      "parent": "fec8ec32-f80a-552b-8a24-23d590df3ce6",
+      "internal": {
+        "content": "# Resume\n\nOuiCar is a company that allows customers to rent their own car. They so can register their car in the system and, on the other side, customers can search and book the car they want.\n\nI've first been working with the front end team of 5 on implementing the new API on a React / Redux-saga plugged to a GraphQL isomorphic stack for a couple of weeks.\n\nThen I mainly worked with the back end team of 5 on the Elastic search based search engine providing an API done in NodeJS with Koa. The engine integrated a car catalog search. By combining geocoding and renters reviews we applied a relevance scoring.\n\nI've also worked on the Symfony 3 car catalog engine backed by a MySQL database hosted on AWS RDS.\nAll our processes were following the scrum agile methodology.\n\nStack : AWS SNS/SQS, RDS, Elastic Cache, Elastic Search, Docker, PHP/Symfony3, MySQL, React/Redux-saga.",
+        "type": "MarkdownRemark",
+        "contentDigest": "75efba49b9963f93180e888e37dfd308",
+        "owner": "gatsby-transformer-remark",
+        "fieldOwners": {
+          "slug": "default-site-plugin"
+        }
+      },
+      "frontmatter": {
+        "title": "OuiCar Car rental",
+        "client": "OuiCar",
+        "cover": "./yellowBlobSphere.jpg",
+        "date": "2017-06-01",
+        "service": "Full Stack Developer",
+        "_PARENT": "fec8ec32-f80a-552b-8a24-23d590df3ce6"
+      },
+      "excerpt": "",
+      "rawMarkdownBody": "# Resume\n\nOuiCar is a company that allows customers to rent their own car. They so can register their car in the system and, on the other side, customers can search and book the car they want.\n\nI've first been working with the front end team of 5 on implementing the new API on a React / Redux-saga plugged to a GraphQL isomorphic stack for a couple of weeks.\n\nThen I mainly worked with the back end team of 5 on the Elastic search based search engine providing an API done in NodeJS with Koa. The engine integrated a car catalog search. By combining geocoding and renters reviews we applied a relevance scoring.\n\nI've also worked on the Symfony 3 car catalog engine backed by a MySQL database hosted on AWS RDS.\nAll our processes were following the scrum agile methodology.\n\nStack : AWS SNS/SQS, RDS, Elastic Cache, Elastic Search, Docker, PHP/Symfony3, MySQL, React/Redux-saga.",
+      "fileAbsolutePath": "/home/nassim/Projects/flyersweb.github.com/content/projects/2017-06-01/index.md",
+      "fields": {
+        "slug": "/oui-car-car-rental"
+      }
+    },
+    "30988f4c-b066-5619-8c21-afc6e6816897": {
+      "id": "30988f4c-b066-5619-8c21-afc6e6816897",
+      "children": [],
+      "parent": "8fe2a1e9-8b5f-5f38-b256-e64884905cb5",
+      "internal": {
+        "content": "# Resume\n\nGoodsID is a company that want to bring the block chain to the luxury and art industry. Helping customers to trace each good supply chain it provides a way to limit counterfeiting and improve good value.\n\nI've been working with a team of 5 with an AWS Elastic Beanstalk hosting, an Elixir/Phoenix back-end API for multiple Angular clients.\n\nI’ve architected and deployed the cloud infrastructure, emailing system and RabbitMQ queuing system for asynchronous treatments.\n\nI've extensively used AES and RSA cryptography for data anonymization and integrity. The API that I made provided an account management system based on JWT tokens, a media management through AWS S3 and a NodeJS interface to interact with IOTA.\n\nStack : AWS Elastic Beanstalk, S3, Cloud Front, RabbitMQ, Docker, Elixir/Phoenix, PostgreSQL, Angular, IOTA.",
+        "type": "MarkdownRemark",
+        "contentDigest": "b0ef9e6cfd49b50ae895039941fd0f3c",
+        "owner": "gatsby-transformer-remark",
+        "fieldOwners": {
+          "slug": "default-site-plugin"
+        }
+      },
+      "frontmatter": {
+        "title": "GoodsID Luxury supply chain",
+        "client": "GoodsID",
+        "cover": "./otherCubeRound.jpg",
+        "date": "2018-05-01",
+        "service": "Senior Back-end Developer",
+        "_PARENT": "8fe2a1e9-8b5f-5f38-b256-e64884905cb5"
+      },
+      "excerpt": "",
+      "rawMarkdownBody": "# Resume\n\nGoodsID is a company that want to bring the block chain to the luxury and art industry. Helping customers to trace each good supply chain it provides a way to limit counterfeiting and improve good value.\n\nI've been working with a team of 5 with an AWS Elastic Beanstalk hosting, an Elixir/Phoenix back-end API for multiple Angular clients.\n\nI’ve architected and deployed the cloud infrastructure, emailing system and RabbitMQ queuing system for asynchronous treatments.\n\nI've extensively used AES and RSA cryptography for data anonymization and integrity. The API that I made provided an account management system based on JWT tokens, a media management through AWS S3 and a NodeJS interface to interact with IOTA.\n\nStack : AWS Elastic Beanstalk, S3, Cloud Front, RabbitMQ, Docker, Elixir/Phoenix, PostgreSQL, Angular, IOTA.",
+      "fileAbsolutePath": "/home/nassim/Projects/flyersweb.github.com/content/projects/2018-05-15/index.md",
+      "fields": {
+        "slug": "/goods-id-luxury-supply-chain"
+      }
+    },
+    "e2ba9738-2219-5f97-988f-61c5d2ad38b4": {
+      "id": "e2ba9738-2219-5f97-988f-61c5d2ad38b4",
+      "children": [],
+      "parent": "10ade770-3fa7-5d75-b3e1-20069633b459",
+      "internal": {
+        "contentDigest": "e36baa46d7dac6ad35eeff2f9cc0e77c",
+        "type": "ImageSharp",
+        "owner": "gatsby-transformer-sharp"
+      }
+    },
+    "0668a3cc-74d9-5aca-8539-cae3da217c3e": {
+      "id": "0668a3cc-74d9-5aca-8539-cae3da217c3e",
+      "children": [],
+      "parent": "7741743c-61c6-5a71-b483-8b4d9a0d1218",
+      "internal": {
+        "contentDigest": "224143b7440585785b0d46827cc65219",
+        "type": "ImageSharp",
+        "owner": "gatsby-transformer-sharp"
+      }
+    },
+    "443cbc8e-ddc3-5602-90ea-9579f5869948": {
+      "id": "443cbc8e-ddc3-5602-90ea-9579f5869948",
+      "children": [
+        "7a2621a8-cc2e-5052-9366-31c14c091d6d"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "3cde51e22072224ef24b6f5b0fe45a1f",
+        "type": "File",
+        "mediaType": "image/jpeg",
+        "description": "File \"content/projects/2014-06-01/smartTriangle.jpg\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "projects",
+      "absolutePath": "/home/nassim/Projects/flyersweb.github.com/content/projects/2014-06-01/smartTriangle.jpg",
+      "relativePath": "2014-06-01/smartTriangle.jpg",
+      "extension": "jpg",
+      "size": 404825,
+      "prettySize": "405 kB",
+      "modifiedTime": "2019-11-02T11:09:38.159Z",
+      "accessTime": "2019-11-02T11:11:12.964Z",
+      "changeTime": "2019-11-02T11:09:38.159Z",
+      "birthTime": "2019-11-02T11:09:38.159Z",
+      "root": "/",
+      "dir": "/home/nassim/Projects/flyersweb.github.com/content/projects/2014-06-01",
+      "base": "smartTriangle.jpg",
+      "ext": ".jpg",
+      "name": "smartTriangle",
+      "relativeDirectory": "2014-06-01",
+      "dev": 2053,
+      "mode": 33204,
+      "nlink": 1,
+      "uid": 1000,
+      "gid": 1000,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 25691522,
+      "blocks": 792,
+      "atimeMs": 1572693072964.2104,
+      "mtimeMs": 1572692978159.226,
+      "ctimeMs": 1572692978159.226,
+      "birthtimeMs": 1572692978159.226,
+      "atime": "2019-11-02T11:11:12.964Z",
+      "mtime": "2019-11-02T11:09:38.159Z",
+      "ctime": "2019-11-02T11:09:38.159Z",
+      "birthtime": "2019-11-02T11:09:38.159Z"
+    },
+    "7a2621a8-cc2e-5052-9366-31c14c091d6d": {
+      "id": "7a2621a8-cc2e-5052-9366-31c14c091d6d",
+      "children": [],
+      "parent": "443cbc8e-ddc3-5602-90ea-9579f5869948",
+      "internal": {
+        "contentDigest": "3cde51e22072224ef24b6f5b0fe45a1f",
+        "type": "ImageSharp",
+        "owner": "gatsby-transformer-sharp"
+      }
+    },
+    "60eedee5-a83f-5c70-a64f-61e67ace88fd": {
+      "id": "60eedee5-a83f-5c70-a64f-61e67ace88fd",
+      "children": [
+        "557a7372-d11f-5036-b301-55027d65fefa"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "e6ed7248f124cf6c5f5065b4e50eeb3e",
+        "type": "File",
+        "mediaType": "image/jpeg",
+        "description": "File \"content/projects/2017-06-01/yellowBlobSphere.jpg\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "projects",
+      "absolutePath": "/home/nassim/Projects/flyersweb.github.com/content/projects/2017-06-01/yellowBlobSphere.jpg",
+      "relativePath": "2017-06-01/yellowBlobSphere.jpg",
+      "extension": "jpg",
+      "size": 546964,
+      "prettySize": "547 kB",
+      "modifiedTime": "2019-11-02T11:09:38.163Z",
+      "accessTime": "2019-11-02T11:11:12.980Z",
+      "changeTime": "2019-11-02T11:09:38.163Z",
+      "birthTime": "2019-11-02T11:09:38.163Z",
+      "root": "/",
+      "dir": "/home/nassim/Projects/flyersweb.github.com/content/projects/2017-06-01",
+      "base": "yellowBlobSphere.jpg",
+      "ext": ".jpg",
+      "name": "yellowBlobSphere",
+      "relativeDirectory": "2017-06-01",
+      "dev": 2053,
+      "mode": 33204,
+      "nlink": 1,
+      "uid": 1000,
+      "gid": 1000,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 25691528,
+      "blocks": 1072,
+      "atimeMs": 1572693072980.2107,
+      "mtimeMs": 1572692978163.226,
+      "ctimeMs": 1572692978163.226,
+      "birthtimeMs": 1572692978163.226,
+      "atime": "2019-11-02T11:11:12.980Z",
+      "mtime": "2019-11-02T11:09:38.163Z",
+      "ctime": "2019-11-02T11:09:38.163Z",
+      "birthtime": "2019-11-02T11:09:38.163Z"
+    },
+    "557a7372-d11f-5036-b301-55027d65fefa": {
+      "id": "557a7372-d11f-5036-b301-55027d65fefa",
+      "children": [],
+      "parent": "60eedee5-a83f-5c70-a64f-61e67ace88fd",
+      "internal": {
+        "contentDigest": "e6ed7248f124cf6c5f5065b4e50eeb3e",
+        "type": "ImageSharp",
+        "owner": "gatsby-transformer-sharp"
+      }
+    },
+    "SitePage /offline-plugin-app-shell-fallback/": {
+      "jsonName": "offline-plugin-app-shell-fallback-a30",
+      "internalComponentName": "ComponentOfflinePluginAppShellFallback",
+      "path": "/offline-plugin-app-shell-fallback/",
+      "component": "/home/nassim/Projects/flyersweb.github.com/node_modules/gatsby-plugin-offline/app-shell.js",
+      "componentChunkName": "component---node-modules-gatsby-plugin-offline-app-shell-js",
+      "context": {},
+      "pluginCreator___NODE": "Plugin gatsby-plugin-offline",
+      "pluginCreatorId": "Plugin gatsby-plugin-offline",
+      "componentPath": "/home/nassim/Projects/flyersweb.github.com/node_modules/gatsby-plugin-offline/app-shell.js",
+      "id": "SitePage /offline-plugin-app-shell-fallback/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "acf36d2406ed2e83d0d3751cff96f914",
+        "description": "Plugin gatsby-plugin-offline",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /dresden-partners-it-services": {
+      "jsonName": "dresden-partners-it-services-52c",
+      "internalComponentName": "ComponentDresdenPartnersItServices",
+      "path": "/dresden-partners-it-services",
+      "component": "/home/nassim/Projects/flyersweb.github.com/src/templates/project.jsx",
+      "componentChunkName": "component---src-templates-project-jsx",
+      "context": {
+        "slug": "/dresden-partners-it-services"
+      },
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/home/nassim/Projects/flyersweb.github.com/src/templates/project.jsx",
+      "id": "SitePage /dresden-partners-it-services",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "9a066020c57a941a729f8ffc57e395dd",
+        "description": "Your site's \"gatsby-node.js\"",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /club-med-all-inclusive-hotels": {
+      "jsonName": "club-med-all-inclusive-hotels-b64",
+      "internalComponentName": "ComponentClubMedAllInclusiveHotels",
+      "path": "/club-med-all-inclusive-hotels",
+      "component": "/home/nassim/Projects/flyersweb.github.com/src/templates/project.jsx",
+      "componentChunkName": "component---src-templates-project-jsx",
+      "context": {
+        "slug": "/club-med-all-inclusive-hotels"
+      },
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/home/nassim/Projects/flyersweb.github.com/src/templates/project.jsx",
+      "id": "SitePage /club-med-all-inclusive-hotels",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "a40ce2ebd9cdbc8e6cca8a2842d5ff45",
+        "description": "Your site's \"gatsby-node.js\"",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /s-4-m-mobile-advertising": {
+      "jsonName": "s-4-m-mobile-advertising-9b5",
+      "internalComponentName": "ComponentS4MMobileAdvertising",
+      "path": "/s-4-m-mobile-advertising",
+      "component": "/home/nassim/Projects/flyersweb.github.com/src/templates/project.jsx",
+      "componentChunkName": "component---src-templates-project-jsx",
+      "context": {
+        "slug": "/s-4-m-mobile-advertising"
+      },
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/home/nassim/Projects/flyersweb.github.com/src/templates/project.jsx",
+      "id": "SitePage /s-4-m-mobile-advertising",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "7e5ff08b498557cfe5a934fe88af554d",
+        "description": "Your site's \"gatsby-node.js\"",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /oui-car-car-rental": {
+      "jsonName": "oui-car-car-rental-398",
+      "internalComponentName": "ComponentOuiCarCarRental",
+      "path": "/oui-car-car-rental",
+      "component": "/home/nassim/Projects/flyersweb.github.com/src/templates/project.jsx",
+      "componentChunkName": "component---src-templates-project-jsx",
+      "context": {
+        "slug": "/oui-car-car-rental"
+      },
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/home/nassim/Projects/flyersweb.github.com/src/templates/project.jsx",
+      "id": "SitePage /oui-car-car-rental",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "f8dbc95d541dd5d24d2b972bca16a89b",
+        "description": "Your site's \"gatsby-node.js\"",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /goods-id-luxury-supply-chain": {
+      "jsonName": "goods-id-luxury-supply-chain-c7c",
+      "internalComponentName": "ComponentGoodsIdLuxurySupplyChain",
+      "path": "/goods-id-luxury-supply-chain",
+      "component": "/home/nassim/Projects/flyersweb.github.com/src/templates/project.jsx",
+      "componentChunkName": "component---src-templates-project-jsx",
+      "context": {
+        "slug": "/goods-id-luxury-supply-chain"
+      },
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/home/nassim/Projects/flyersweb.github.com/src/templates/project.jsx",
+      "id": "SitePage /goods-id-luxury-supply-chain",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "d26f5080b36b180e8e233d8507b89d20",
+        "description": "Your site's \"gatsby-node.js\"",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /404/": {
+      "jsonName": "404-22d",
+      "internalComponentName": "Component404",
+      "path": "/404/",
+      "component": "/home/nassim/Projects/flyersweb.github.com/src/pages/404.jsx",
+      "componentChunkName": "component---src-pages-404-jsx",
+      "context": {},
+      "pluginCreator___NODE": "Plugin gatsby-plugin-page-creator",
+      "pluginCreatorId": "Plugin gatsby-plugin-page-creator",
+      "componentPath": "/home/nassim/Projects/flyersweb.github.com/src/pages/404.jsx",
+      "id": "SitePage /404/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "4a66fb52601219ca5c7e887816488dd5",
+        "description": "Plugin gatsby-plugin-page-creator",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /about/": {
+      "jsonName": "about-f34",
+      "internalComponentName": "ComponentAbout",
+      "path": "/about/",
+      "component": "/home/nassim/Projects/flyersweb.github.com/src/pages/about.jsx",
+      "componentChunkName": "component---src-pages-about-jsx",
+      "context": {},
+      "pluginCreator___NODE": "Plugin gatsby-plugin-page-creator",
+      "pluginCreatorId": "Plugin gatsby-plugin-page-creator",
+      "componentPath": "/home/nassim/Projects/flyersweb.github.com/src/pages/about.jsx",
+      "id": "SitePage /about/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "17269e59be2ab4c5bf0589bc22da59cc",
+        "description": "Plugin gatsby-plugin-page-creator",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /": {
+      "jsonName": "index",
+      "internalComponentName": "ComponentIndex",
+      "path": "/",
+      "component": "/home/nassim/Projects/flyersweb.github.com/src/pages/index.jsx",
+      "componentChunkName": "component---src-pages-index-jsx",
+      "context": {},
+      "pluginCreator___NODE": "Plugin gatsby-plugin-page-creator",
+      "pluginCreatorId": "Plugin gatsby-plugin-page-creator",
+      "componentPath": "/home/nassim/Projects/flyersweb.github.com/src/pages/index.jsx",
+      "id": "SitePage /",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "bf720b15105bb6b055f42d1c9f98856d",
+        "description": "Plugin gatsby-plugin-page-creator",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /404.html": {
+      "jsonName": "404-html-516",
+      "internalComponentName": "Component404Html",
+      "path": "/404.html",
+      "component": "/home/nassim/Projects/flyersweb.github.com/src/pages/404.jsx",
+      "componentChunkName": "component---src-pages-404-jsx",
+      "context": {},
+      "pluginCreator___NODE": "Plugin prod-404",
+      "pluginCreatorId": "Plugin prod-404",
+      "componentPath": "/home/nassim/Projects/flyersweb.github.com/src/pages/404.jsx",
+      "id": "SitePage /404.html",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "77c470abda72a7a3dddadf5d13b2ef58",
+        "description": "Plugin prod-404",
+        "owner": "internal-data-bridge"
+      }
+    }
+  },
+  "status": {
+    "plugins": {},
+    "PLUGINS_HASH": "b4b491c7fbe2ce0515d62f4655382001"
+  },
+  "componentDataDependencies": {
+    "nodes": {
+      "10ade770-3fa7-5d75-b3e1-20069633b459": [
+        "/",
+        "/goods-id-luxury-supply-chain"
+      ],
+      "e2ba9738-2219-5f97-988f-61c5d2ad38b4": [
+        "/",
+        "/goods-id-luxury-supply-chain"
+      ],
+      "60eedee5-a83f-5c70-a64f-61e67ace88fd": [
+        "/",
+        "/oui-car-car-rental"
+      ],
+      "557a7372-d11f-5036-b301-55027d65fefa": [
+        "/",
+        "/oui-car-car-rental"
+      ],
+      "7741743c-61c6-5a71-b483-8b4d9a0d1218": [
+        "/",
+        "/club-med-all-inclusive-hotels"
+      ],
+      "0668a3cc-74d9-5aca-8539-cae3da217c3e": [
+        "/",
+        "/club-med-all-inclusive-hotels"
+      ],
+      "443cbc8e-ddc3-5602-90ea-9579f5869948": [
+        "/",
+        "/s-4-m-mobile-advertising"
+      ],
+      "7a2621a8-cc2e-5052-9366-31c14c091d6d": [
+        "/",
+        "/s-4-m-mobile-advertising"
+      ],
+      "df6aaae8-4800-5993-b967-1cf89755916a": [
+        "/",
+        "/dresden-partners-it-services"
+      ],
+      "d3fe4471-a59a-5cb7-a993-a19f6b57fe26": [
+        "/",
+        "/dresden-partners-it-services"
+      ],
+      "a4d02a79-5cc8-5266-96b8-db1de32e8a6b": [
+        "/dresden-partners-it-services"
+      ],
+      "542bdc28-0767-5f28-bb20-fbbb2b21c70e": [
+        "/club-med-all-inclusive-hotels"
+      ],
+      "87566a16-b244-5553-b91f-b5029ca00006": [
+        "/s-4-m-mobile-advertising"
+      ],
+      "8e9fc2ad-68b7-565f-ba94-9b8b81f85854": [
+        "/oui-car-car-rental"
+      ],
+      "30988f4c-b066-5619-8c21-afc6e6816897": [
+        "/goods-id-luxury-supply-chain"
+      ]
+    },
+    "connections": {
+      "MarkdownRemark": [
+        "/"
+      ]
+    }
+  },
+  "jsonDataPaths": {
+    "dresden-partners-it-services-52c": "690/path---dresden-partners-it-services-52-c-22e-vrWUwyeupMZA7USvuu3ZZP2o7k",
+    "club-med-all-inclusive-hotels-b64": "459/path---club-med-all-inclusive-hotels-b-64-577-ujWPWnEjo0TZNNNga33Q7dXg",
+    "s-4-m-mobile-advertising-9b5": "475/path---s-4-m-mobile-advertising-9-b-5-3c0-RgyIu0eqdwDdxP6Tshw7SqgtI",
+    "offline-plugin-app-shell-fallback-a30": "520/path---offline-plugin-app-shell-fallback-a-30-c5a-NZuapzHg3X9TaN1iIixfv1W23E",
+    "oui-car-car-rental-398": "500/path---oui-car-car-rental-398-918-APDmqhWQf5cscnG8OxM2xRf1O0",
+    "404-22d": "44/path---404-22-d-bce-NZuapzHg3X9TaN1iIixfv1W23E",
+    "goods-id-luxury-supply-chain-c7c": "960/path---goods-id-luxury-supply-chain-c-7-c-613-Mvy03kFvbduBX3MjzIyPnYqYAZk",
+    "about-f34": "125/path---about-f-34-4c2-NZuapzHg3X9TaN1iIixfv1W23E",
+    "404-html-516": "164/path---404-html-516-62a-NZuapzHg3X9TaN1iIixfv1W23E",
+    "index": "24/path---index-6a9-aeohLiHYIeUicxpNT8R2CQ14uiw"
+  },
+  "components": {
+    "/home/nassim/Projects/flyersweb.github.com/node_modules/gatsby-plugin-offline/app-shell.js": {
+      "query": "",
+      "componentPath": "/home/nassim/Projects/flyersweb.github.com/node_modules/gatsby-plugin-offline/app-shell.js"
+    },
+    "/home/nassim/Projects/flyersweb.github.com/src/templates/project.jsx": {
+      "query": "query ProjectPostBySlug(\n  $slug: String!\n) {\n  markdownRemark(fields: {slug: {eq: $slug}}) {\n    html\n    excerpt\n    frontmatter {\n      title\n      date(formatString: \"YYYY\")\n      client\n      service\n      cover {\n        childImageSharp {\n          resize(width: 800) {\n            src\n          }\n        }\n      }\n    }\n    fields {\n      slug\n    }\n  }\n}\n",
+      "componentPath": "/home/nassim/Projects/flyersweb.github.com/src/templates/project.jsx"
+    },
+    "/home/nassim/Projects/flyersweb.github.com/src/pages/404.jsx": {
+      "query": "",
+      "componentPath": "/home/nassim/Projects/flyersweb.github.com/src/pages/404.jsx"
+    },
+    "/home/nassim/Projects/flyersweb.github.com/src/pages/about.jsx": {
+      "query": "",
+      "componentPath": "/home/nassim/Projects/flyersweb.github.com/src/pages/about.jsx"
+    },
+    "/home/nassim/Projects/flyersweb.github.com/src/pages/index.jsx": {
+      "query": "query IndexQuery {\n  allMarkdownRemark(sort: {fields: [frontmatter___date], order: DESC}) {\n    edges {\n      node {\n        fields {\n          slug\n        }\n        frontmatter {\n          service\n          client\n          date(formatString: \"YYYY\")\n          cover {\n            childImageSharp {\n              fluid(maxWidth: 850, quality: 90, traceSVG: {color: \"#f3f3f3\"}) {\n                ...GatsbyImageSharpFluid_tracedSVG\n              }\n            }\n          }\n        }\n      }\n    }\n  }\n}\n\nfragment GatsbyImageSharpFluid_tracedSVG on ImageSharpFluid {\n  tracedSVG\n  aspectRatio\n  src\n  srcSet\n  sizes\n}\n",
+      "componentPath": "/home/nassim/Projects/flyersweb.github.com/src/pages/index.jsx"
+    }
+  },
+  "staticQueryComponents": {}
+}
