@@ -3,7 +3,7 @@ client: "GoodsID"
 title: "GoodsID Luxury supply chain"
 cover: "./otherCubeRound.jpg"
 date: "2018-05-01"
-service: "Senior Back-end Developer"
+service: "Senior Web Developer and Architect"
 ---
 # Resume
 

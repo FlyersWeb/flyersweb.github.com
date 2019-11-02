@@ -3,7 +3,7 @@ client: "OuiCar"
 title: "OuiCar Car rental"
 cover: "./yellowBlobSphere.jpg"
 date: "2017-06-01"
-service: "Full Stack Developer"
+service: "Senior Web Developer"
 ---
 # Resume
 

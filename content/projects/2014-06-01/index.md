@@ -3,7 +3,7 @@ client: "S4M"
 title: "S4M Mobile Advertising"
 cover: "./smartTriangle.jpg"
 date: "2014-06-01"
-service: "Lead Back-end Developer"
+service: "Lead Web Developer"
 ---
 # Resume
 

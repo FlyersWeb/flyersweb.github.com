@@ -3,7 +3,7 @@ client: "Club Med"
 title: "Club Med All Inclusive Hotels"
 cover: "./cubeRound.jpg"
 date: "2016-06-01"
-service: "Front-end Developer"
+service: "Web Consultant"
 ---
 # Resume
 
