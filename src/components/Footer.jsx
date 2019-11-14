@@ -28,7 +28,7 @@ const Footer = () => (
         <FaBlogger size={128} color="black" />
       </a>
     </p>
-    Copyright &copy; 2018. All right reserved.
+    Copyright &copy; {(new Date()).getFullYear()}. All right reserved.
   </Wrapper>
 );
 

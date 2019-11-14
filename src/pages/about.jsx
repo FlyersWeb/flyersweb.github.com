@@ -14,8 +14,7 @@ const VerticalTimelineElementTitle = styled.h3`
 `;
 
 const VerticalTimelineElementSubtitle = styled.h4`
-  font-size: 0.9em;
-  text-align: left;
+  text-align: justify;
 `;
 
 const VerticalTimelineElementDate = styled.p`
@@ -33,6 +32,8 @@ const About = () => (
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           iconStyle={{ background: '#7b8acc', color: '#fff' }}
+          contentStyle={{ border: "1px solid #ddd" }}
+          contentArrowStyle={{ borderRight: '7px solid  #ddd' }}
           icon={<FaSuitcase />}
           position="left"
         >
@@ -40,12 +41,12 @@ const About = () => (
             Senior Web Developer and Architect @GoodsID
           </VerticalTimelineElementTitle>
           <VerticalTimelineElementSubtitle>
-            AWS ElasticBeanstalk, S3, CloudFront, Docker, Elixir/Phoenix, PostgreSQL, Angular 6
+            GoodsID is a company that want to bring the block chain to the luxury and art industry. Helping customers to trace each good supply chain it provides a way to limit counterfeiting and improve good value.
           </VerticalTimelineElementSubtitle>
           <VerticalTimelineElementDate>
-            2018 - present
+            2018 - 2020
           </VerticalTimelineElementDate>
-          <p>
+          <p className="vertical-timeline-element--link">
             <Link to="/goods-id-luxury-supply-chain">
               More details
             </Link>
@@ -55,6 +56,8 @@ const About = () => (
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           iconStyle={{ background: '#7b8acc', color: '#fff' }}
+          contentStyle={{ border: "1px solid #ddd" }}
+          contentArrowStyle={{ borderRight: '7px solid  #ddd' }}
           icon={<FaSuitcase />}
           position="right"
         >
@@ -62,12 +65,12 @@ const About = () => (
             Senior Web Developer @OuiCar
           </VerticalTimelineElementTitle>
           <VerticalTimelineElementSubtitle>
-            AWS SNS/SQS, RDS, ElasticCache, ElasticSearch, Docker, PHP/Symfony3, MySQL, React/Redux-saga
+            OuiCar is a company that allows customers to rent their own car. They so can register their car in the system and, on the other side, customers can search and book the car they want
           </VerticalTimelineElementSubtitle>
           <VerticalTimelineElementDate>
             2017 - 2018
           </VerticalTimelineElementDate>
-          <p>
+          <p className="vertical-timeline-element--link">
             <Link to="/oui-car-car-rental">
               More details
             </Link>
@@ -77,6 +80,8 @@ const About = () => (
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           iconStyle={{ background: '#7b8acc', color: '#fff' }}
+          contentStyle={{ border: "1px solid #ddd" }}
+          contentArrowStyle={{ borderRight: '7px solid  #ddd' }}
           icon={<FaSuitcase />}
           position="left"
         >
@@ -84,12 +89,12 @@ const About = () => (
             Web Consultant @ClubMed
           </VerticalTimelineElementTitle>
           <VerticalTimelineElementSubtitle>
-            Heroku, GraphQL, NodeJS, React/Redux
+            Club Méditerranée is an all inclusive hotel accommodation company. I've worked there as part of the front end shopping 5 members team being part of the full 20 front end team
           </VerticalTimelineElementSubtitle>
           <VerticalTimelineElementDate>
             2016 - 2017
           </VerticalTimelineElementDate>
-          <p>
+          <p className="vertical-timeline-element--link">
             <Link to="/club-med-all-inclusive-hotels">
               More details
             </Link>
@@ -99,6 +104,8 @@ const About = () => (
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           iconStyle={{ background: '#7b8acc', color: '#fff' }}
+          contentStyle={{ border: "1px solid #ddd" }}
+          contentArrowStyle={{ borderRight: '7px solid  #ddd' }}
           icon={<FaSuitcase />}
           position="right"
         >
@@ -106,12 +113,12 @@ const About = () => (
             Lead Web Developer @S4M
           </VerticalTimelineElementTitle>
           <VerticalTimelineElementSubtitle>
-            Varnish, Nginx, MariaDB, PHP/Symfony2, AngularJS, Javascript
+            S4M is a digital advertising company focused on mobile devices. We managed internally three projects, one to manage advertising campaigns, one for mobile application reputation on stores and another for KPI analytic
           </VerticalTimelineElementSubtitle>
           <VerticalTimelineElementDate>
             2014 - 2016
           </VerticalTimelineElementDate>
-          <p>
+          <p className="vertical-timeline-element--link">
             <Link to="/s-4-m-mobile-advertising">
               More details
             </Link>
@@ -121,6 +128,8 @@ const About = () => (
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           iconStyle={{ background: '#7b8acc', color: '#fff' }}
+          contentStyle={{ border: "1px solid #ddd" }}
+          contentArrowStyle={{ borderRight: '7px solid  #ddd' }}
           icon={<FaSuitcase />}
           position="left"
         >
@@ -128,12 +137,12 @@ const About = () => (
             Web Project Manager @DresdenPartners
           </VerticalTimelineElementTitle>
           <VerticalTimelineElementSubtitle>
-            AWS, Nodejitsu, Mysql, MongoDB, NodeJS, C# ASP.NET MVC, PHP/Symfony2 BackboneJS, HighchartJS, Telerik
+            Dresden Partners is an IT Consulting company based in Mexico city and San Francisco making mobile and web applications for advertising, logistics and more...
           </VerticalTimelineElementSubtitle>
           <VerticalTimelineElementDate>
             2012 - 2014
           </VerticalTimelineElementDate>
-          <p>
+          <p className="vertical-timeline-element--link">
             <Link to="/dresden-partners-it-services">
               More details
             </Link>
