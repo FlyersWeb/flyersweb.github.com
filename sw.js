@@ -11,8 +11,8 @@
  * See https://goo.gl/2aRDsh
  */
 
-importScripts("workbox-v3.6.2/workbox-sw.js");
-workbox.setConfig({modulePathPrefix: "workbox-v3.6.2"});
+importScripts("workbox-v3.6.3/workbox-sw.js");
+workbox.setConfig({modulePathPrefix: "workbox-v3.6.3"});
 
 workbox.core.setCacheNameDetails({prefix: "gatsby-plugin-offline"});
 
@@ -26,42 +26,20 @@ workbox.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-ca1822eb3001203b72fd.js"
+    "url": "webpack-runtime-8e0e67a3ca567d67ba72.js"
   },
   {
-    "url": "app-24624469935910219576.js"
+    "url": "commons-6cb276f9402a1e025ca1.js"
   },
   {
-    "url": "component---node-modules-gatsby-plugin-offline-app-shell-js-ff3293e3b8b8501f4f1a.js"
+    "url": "app-89f0c868bae1adcff0d1.js"
   },
   {
-    "url": "index.html",
-    "revision": "446497ac3da4447a0f8d252dc717174d"
+    "url": "component---node-modules-gatsby-plugin-offline-app-shell-js-464799f49a8645ba6a44.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "c3e36fca69a531c8b1d3822a6536a6b8"
-  },
-  {
-    "url": "0-d9be1c8c84d8661321e2.js"
-  },
-  {
-    "url": "component---src-pages-index-jsx-fcdfdcd7599ed5f194de.js"
-  },
-  {
-    "url": "static/d/134/path---index-6a9-GhoFYpWXgjXmHqN61SfpIeLm0.json",
-    "revision": "6d303a32eb4666d03eb4a8f85f753a07"
-  },
-  {
-    "url": "component---src-pages-404-jsx-dfdd647c84ba80e0478f.js"
-  },
-  {
-    "url": "static/d/164/path---404-html-516-62a-NZuapzHg3X9TaN1iIixfv1W23E.json",
-    "revision": "c2508676a2f33ea9f1f0bf472997f9a0"
-  },
-  {
-    "url": "static/d/520/path---offline-plugin-app-shell-fallback-a-30-c5a-NZuapzHg3X9TaN1iIixfv1W23E.json",
-    "revision": "c2508676a2f33ea9f1f0bf472997f9a0"
+    "revision": "6d6119ac6ae19382eeb45275edf9709a"
   },
   {
     "url": "manifest.json",
@@ -69,36 +47,60 @@ self.__precacheManifest = [
   },
   {
     "url": "manifest.webmanifest",
-    "revision": "7a05a60d6cc7268f09adaf67a39d61ae"
+    "revision": "0ec96d7d22a9a523c35ece6821496baa"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/offline-plugin-app-shell-fallback/index.html", {
-  whitelist: [/^[^?]*([^.?]{5}|\.html)(\?.*)?$/],
-  blacklist: [/\?(.+&)?no-cache=1$/],
-});
+workbox.routing.registerRoute(/(\.js$|\.css$|static\/)/, workbox.strategies.cacheFirst(), 'GET');
+workbox.routing.registerRoute(/^https?:.*\page-data\/.*\/page-data\.json/, workbox.strategies.networkFirst(), 'GET');
+workbox.routing.registerRoute(/^https?:.*\.(png|jpg|jpeg|webp|svg|gif|tiff|js|woff|woff2|json|css)$/, workbox.strategies.staleWhileRevalidate(), 'GET');
+workbox.routing.registerRoute(/^https?:\/\/fonts\.googleapis\.com\/css/, workbox.strategies.staleWhileRevalidate(), 'GET');
 
-workbox.routing.registerRoute(/\.(?:png|jpg|jpeg|webp|svg|gif|tiff|js|woff|woff2|json|css)$/, workbox.strategies.staleWhileRevalidate(), 'GET');
-workbox.routing.registerRoute(/^https:/, workbox.strategies.networkFirst(), 'GET');
-"use strict";
+/* global importScripts, workbox, idbKeyval */
 
-/* global workbox */
-self.addEventListener("message", function (event) {
-  var api = event.data.api;
+importScripts(`idb-keyval-iife.min.js`)
 
-  if (api === "gatsby-runtime-cache") {
-    var resources = event.data.resources;
-    var cacheName = workbox.core.cacheNames.runtime;
-    event.waitUntil(caches.open(cacheName).then(function (cache) {
-      return Promise.all(resources.map(function (resource) {
-        return cache.add(resource).catch(function (e) {
-          // ignore TypeErrors - these are usually due to
-          // external resources which don't allow CORS
-          if (!(e instanceof TypeError)) throw e;
-        });
-      }));
-    }));
+const { NavigationRoute } = workbox.routing
+
+const navigationRoute = new NavigationRoute(async ({ event }) => {
+  let { pathname } = new URL(event.request.url)
+  pathname = pathname.replace(new RegExp(`^`), ``)
+
+  // Check for resources + the app bundle
+  // The latter may not exist if the SW is updating to a new version
+  const resources = await idbKeyval.get(`resources:${pathname}`)
+  if (!resources || !(await caches.match(`/app-89f0c868bae1adcff0d1.js`))) {
+    return await fetch(event.request)
   }
-});
+
+  for (const resource of resources) {
+    // As soon as we detect a failed resource, fetch the entire page from
+    // network - that way we won't risk being in an inconsistent state with
+    // some parts of the page failing.
+    if (!(await caches.match(resource))) {
+      return await fetch(event.request)
+    }
+  }
+
+  const offlineShell = `/offline-plugin-app-shell-fallback/index.html`
+  return await caches.match(offlineShell)
+})
+
+workbox.routing.registerRoute(navigationRoute)
+
+const messageApi = {
+  setPathResources(event, { path, resources }) {
+    event.waitUntil(idbKeyval.set(`resources:${path}`, resources))
+  },
+
+  clearPathResources(event) {
+    event.waitUntil(idbKeyval.clear())
+  },
+}
+
+self.addEventListener(`message`, event => {
+  const { gatsbyApi } = event.data
+  if (gatsbyApi) messageApi[gatsbyApi](event, event.data)
+})
